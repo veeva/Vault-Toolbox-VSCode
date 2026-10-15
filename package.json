@@ -1,0 +1,464 @@
+{
+	"name": "vault-toolbox-vscode",
+	"displayName": "Vault Toolbox",
+	"description": "Integrates Veeva Vault development and administration workflows directly into Visual Studio Code.",
+	"version": "26.2.1",
+	"publisher": "veeva-systems",
+	"icon": "src/icons/vault-toolbox-logo.png",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/veeva/Vault-Toolbox-VSCode"
+	},
+	"engines": {
+		"vscode": "^1.95.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"main": "./dist/extension.js",
+	"activationEvents": [],
+	"contributes": {
+		"commands": [
+			{
+				"command": "vaultToolbox.addEnvironment",
+				"title": "Add Environment",
+				"category": "Vault Toolbox",
+				"icon": "$(add)"
+			},
+			{
+				"command": "vaultToolbox.removeEnvironment",
+				"title": "Remove Environment",
+				"category": "Vault Toolbox",
+				"icon": "$(trash)"
+			},
+			{
+				"command": "vaultToolbox.connectEnvironment",
+				"title": "Connect",
+				"category": "Vault Toolbox",
+				"icon": "$(plug)"
+			},
+			{
+				"command": "vaultToolbox.disconnect",
+				"title": "Disconnect",
+				"category": "Vault Toolbox",
+				"icon": "$(debug-disconnect)"
+			},
+			{
+				"command": "vaultToolbox.setActiveEnvironment",
+				"title": "Set as Active Environment",
+				"category": "Vault Toolbox",
+				"icon": "$(star)"
+			},
+			{
+				"command": "vaultToolbox.open",
+				"title": "Open Vault Toolbox",
+				"category": "Vault Toolbox",
+				"icon": "$(server-environment)"
+			},
+			{
+				"command": "vaultToolbox.showVqlSidebar",
+				"title": "Open VQL Editor",
+				"category": "Vault Toolbox",
+				"icon": "$(terminal)"
+			},
+			{
+				"command": "vaultToolbox.popOutVqlEditor",
+				"title": "Open VQL Editor in Editor Tab",
+				"category": "Vault Toolbox",
+				"icon": "$(link-external)"
+			},
+			{
+				"command": "vaultToolbox.openSettings",
+				"title": "Open Settings",
+				"category": "Vault Toolbox",
+				"icon": "$(gear)"
+			},
+			{
+				"command": "vaultToolbox.deployMdl",
+				"title": "Deploy to Vault",
+				"category": "Vault Toolbox",
+				"enablement": "vaultToolbox.activeConnected"
+			},
+			{
+				"command": "vaultToolbox.dropMdl",
+				"title": "Drop from Vault",
+				"category": "Vault Toolbox",
+				"enablement": "vaultToolbox.activeConnected"
+			},
+			{
+				"command": "vaultToolbox.deploySdkCode",
+				"title": "Deploy to Vault",
+				"category": "Vault Toolbox",
+				"enablement": "vaultToolbox.activeConnected"
+			},
+			{
+				"command": "vaultToolbox.deleteSdkCode",
+				"title": "Delete from Vault",
+				"category": "Vault Toolbox",
+				"enablement": "vaultToolbox.activeConnected"
+			},
+			{
+				"command": "vaultToolbox.compareEnvironments",
+				"title": "Compare Environments",
+				"category": "Vault Toolbox",
+				"icon": "$(diff)"
+			},
+			{
+				"command": "vaultToolbox.compareToggleIdentical",
+				"title": "Toggle Identical Components",
+				"category": "Vault Toolbox",
+				"icon": "$(eye)"
+			},
+			{
+				"command": "vaultToolbox.compareFilterConvention",
+				"title": "Filter Components by Source",
+				"category": "Vault Toolbox",
+				"icon": "$(filter)"
+			},
+			{
+				"command": "vaultToolbox.compareFilterConventionActive",
+				"title": "Filter Components by Source",
+				"category": "Vault Toolbox",
+				"icon": "$(filter-filled)"
+			},
+			{
+				"command": "vaultToolbox.compareFilterSelected",
+				"title": "Show Only Selected",
+				"category": "Vault Toolbox",
+				"icon": "$(checklist)"
+			},
+			{
+				"command": "vaultToolbox.compareFilterSelectedActive",
+				"title": "Show All",
+				"category": "Vault Toolbox",
+				"icon": "$(checklist)"
+			},
+			{
+				"command": "vaultToolbox.compareSearch",
+				"title": "Search by Name",
+				"category": "Vault Toolbox",
+				"icon": "$(search)"
+			},
+			{
+				"command": "vaultToolbox.compareSearchActive",
+				"title": "Search by Name",
+				"category": "Vault Toolbox",
+				"icon": "$(search-stop)"
+			},
+			{
+				"command": "vaultToolbox.compareApply",
+				"title": "Apply to Target",
+				"category": "Vault Toolbox",
+				"icon": "$(cloud-upload)"
+			},
+			{
+				"command": "vaultToolbox.compareApplySelected",
+				"title": "Apply Selected to Target",
+				"category": "Vault Toolbox",
+				"icon": "$(cloud-upload)"
+			},
+			{
+				"command": "vaultToolbox.compareOpenDiff",
+				"title": "Open Diff",
+				"category": "Vault Toolbox"
+			}
+		],
+		"submenus": [
+			{
+				"id": "vaultToolbox.fileContext",
+				"label": "Vault Toolbox"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "vaultToolbox.deployMdl",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.dropMdl",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.deploySdkCode",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.deleteSdkCode",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareToggleIdentical",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareFilterConvention",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareSearch",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareSearchActive",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareFilterConventionActive",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareFilterSelected",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareFilterSelectedActive",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareApply",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareApplySelected",
+					"when": "false"
+				},
+				{
+					"command": "vaultToolbox.compareOpenDiff",
+					"when": "false"
+				}
+			],
+			"view/title": [
+				{
+					"command": "vaultToolbox.compareSearch",
+					"when": "view == vaultToolbox.compare && !vaultToolbox.compareSearchActive",
+					"group": "navigation@3"
+				},
+				{
+					"command": "vaultToolbox.compareSearchActive",
+					"when": "view == vaultToolbox.compare && vaultToolbox.compareSearchActive",
+					"group": "navigation@3"
+				},
+				{
+					"command": "vaultToolbox.compareFilterConvention",
+					"when": "view == vaultToolbox.compare && !vaultToolbox.compareFilterActive && vaultToolbox.compareHasComponents",
+					"group": "navigation@4"
+				},
+				{
+					"command": "vaultToolbox.compareFilterConventionActive",
+					"when": "view == vaultToolbox.compare && vaultToolbox.compareFilterActive && vaultToolbox.compareHasComponents",
+					"group": "navigation@4"
+				},
+				{
+					"command": "vaultToolbox.compareFilterSelected",
+					"when": "view == vaultToolbox.compare && !vaultToolbox.compareSelectedFilterActive && (vaultToolbox.compareHasSelection || vaultToolbox.compareApplyEnabled)",
+					"group": "navigation@5"
+				},
+				{
+					"command": "vaultToolbox.compareFilterSelectedActive",
+					"when": "view == vaultToolbox.compare && vaultToolbox.compareSelectedFilterActive && (vaultToolbox.compareHasSelection || vaultToolbox.compareApplyEnabled)",
+					"group": "navigation@5"
+				},
+				{
+					"command": "vaultToolbox.compareToggleIdentical",
+					"when": "view == vaultToolbox.compare",
+					"group": "navigation@6"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "vaultToolbox.compareApply",
+					"when": "view == vaultToolbox.compare && viewItem =~ /^compareEntry.(applicable|deletable)/ && !vaultToolbox.compareTargetProduction && vaultToolbox.compareApplyEnabled",
+					"group": "inline"
+				},
+				{
+					"command": "vaultToolbox.compareApply",
+					"when": "view == vaultToolbox.compare && viewItem =~ /^compareEntry.(applicable|deletable)/ && !vaultToolbox.compareTargetProduction && vaultToolbox.compareApplyEnabled",
+					"group": "1_apply@1"
+				},
+				{
+					"command": "vaultToolbox.compareOpenDiff",
+					"when": "view == vaultToolbox.compare && viewItem =~ /^compareEntry\\./",
+					"group": "1_apply@2"
+				}
+			],
+			"editor/context": [
+				{
+					"submenu": "vaultToolbox.fileContext",
+					"group": "vaultToolbox",
+					"when": "resourceExtname == .mdl || resourceExtname == .java"
+				}
+			],
+			"explorer/context": [
+				{
+					"submenu": "vaultToolbox.fileContext",
+					"group": "vaultToolbox",
+					"when": "resourceExtname == .mdl || resourceExtname == .java"
+				}
+			],
+			"vaultToolbox.fileContext": [
+				{
+					"command": "vaultToolbox.deployMdl",
+					"when": "resourceExtname == .mdl",
+					"group": "1_write@1"
+				},
+				{
+					"command": "vaultToolbox.dropMdl",
+					"when": "resourceExtname == .mdl",
+					"group": "1_write@2"
+				},
+				{
+					"command": "vaultToolbox.deploySdkCode",
+					"when": "resourceExtname == .java",
+					"group": "1_write@1"
+				},
+				{
+					"command": "vaultToolbox.deleteSdkCode",
+					"when": "resourceExtname == .java",
+					"group": "1_write@2"
+				}
+			]
+		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "vaultToolbox",
+					"title": "Vault Toolbox",
+					"icon": "src/icons/vault-toolbox.svg"
+				}
+			]
+		},
+		"views": {
+			"vaultToolbox": [
+				{
+					"id": "vaultToolbox.shell",
+					"name": "Vault Toolbox",
+					"type": "webview"
+				},
+				{
+					"id": "vaultToolbox.compare",
+					"name": "Vault Compare",
+					"type": "tree",
+					"icon": "$(git-compare)",
+					"when": "vaultToolbox.compareActive"
+				}
+			]
+		},
+		"languages": [
+			{
+				"id": "mdl",
+				"aliases": [
+					"MDL",
+					"Vault MDL"
+				],
+				"extensions": [
+					".mdl"
+				],
+				"configuration": "./src/syntaxes/mdl-language-configuration.json",
+				"icon": {
+					"light": "./src/icons/mdl.svg",
+					"dark": "./src/icons/mdl.svg"
+				}
+			}
+		],
+		"grammars": [
+			{
+				"language": "mdl",
+				"scopeName": "source.mdl",
+				"path": "./src/syntaxes/mdl.tmLanguage.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.xml": "xml"
+				}
+			}
+		],
+		"configuration": {
+			"title": "Vault Toolbox",
+			"properties": {
+				"vaultToolbox.APIVersion": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "Vault REST API version to use (e.g. `v26.1`). Leave empty to discover the Vault's latest supported version at connect time."
+				},
+				"vaultToolbox.autoConnect": {
+					"type": "boolean",
+					"default": false,
+					"description": "Automatically connect to the active environment when a workspace opens."
+				},
+				"vaultToolbox.MDLDirectory": {
+					"type": "string",
+					"default": "vault-toolbox/mdl",
+					"description": "Workspace-relative folder that \"Extract MDL from Vault\" writes into. Each Vault gets a subfolder by Vault id, then a subfolder per component type."
+				},
+				"vaultToolbox.SDKCodeDirectory": {
+					"type": "string",
+					"default": "vault-toolbox/sdk",
+					"description": "Workspace-relative folder that \"Extract Java SDK Code from Vault\" writes into. Each Vault gets a subfolder by Vault id, then the custom code laid out as a Java package tree."
+				},
+				"vaultToolbox.ConfigReportDirectory": {
+					"type": "string",
+					"default": "vault-toolbox/config",
+					"description": "Workspace-relative folder that \"Download Vault Configuration Report\" writes into. Each Vault gets a subfolder by Vault id, then a per-run subfolder by timestamp so reports are kept as point-in-time snapshots."
+				},
+				"vaultToolbox.DeveloperLogsDirectory": {
+					"type": "string",
+					"default": "vault-toolbox/logs",
+					"description": "Workspace-relative folder that the \"Developer Logs\" downloads (e.g. \"Download API Usage Log\") write into. Each Vault gets a subfolder by Vault id, then a subfolder per log type, then a subfolder per log date so re-downloading a date refreshes it in place."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"build": "npm run typecheck && node esbuild.js",
+		"package": "npm run typecheck && node esbuild.js --production",
+		"watch": "node esbuild.js --watch",
+		"typecheck": "tsc --noEmit && tsc --noEmit -p src/webview/tsconfig.json",
+		"lint": "eslint src",
+		"format": "prettier --write .",
+		"test": "vitest run --project node",
+		"test:web": "vitest run --project web",
+		"test:browser": "vitest run --project browser",
+		"test:all": "vitest run --project node --project web",
+		"compile-tests": "tsc -p tsconfig.test-integration.json",
+		"pretest:integration": "npm run build && npm run compile-tests",
+		"test:integration": "vscode-test",
+		"pretest:e2e": "npm run build && npm run compile-tests",
+		"test:e2e": "VAULT_TOOLBOX_E2E_CASSETTE=\"$PWD/src/test-e2e/cassettes\" extest setup-and-run './dist/test-e2e/**/*.test.js' --code_version max --storage .vscode-test-e2e --extensions_dir .vscode-test-e2e/extensions --code_settings src/test-e2e/settings.json --mocha_config .mocharc-e2e.json"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^7.0.0",
+		"@testing-library/react": "^16.3.2",
+		"@testing-library/user-event": "^14.6.3",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^20.14.0",
+		"@types/react": "^18.3.31",
+		"@types/react-dom": "^18.3.7",
+		"@types/vscode": "^1.95.0",
+		"@typescript-eslint/eslint-plugin": "^8.0.0",
+		"@typescript-eslint/parser": "^8.0.0",
+		"@vitest/browser": "^4.1.10",
+		"@vitest/browser-playwright": "^4.1.10",
+		"@vscode/test-cli": "^0.0.15",
+		"@vscode/test-electron": "^3.1.0",
+		"esbuild": "^0.23.0",
+		"eslint": "^9.0.0",
+		"jsdom": "^30.0.1",
+		"monaco-editor": "^0.55.1",
+		"playwright": "^1.62.1",
+		"prettier": "^3.3.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-select": "^5.10.2",
+		"react-select-event": "^5.5.1",
+		"typescript": "^5.5.0",
+		"vite": "^8.2.1",
+		"vitest": "^4.1.10",
+		"vscode-extension-tester": "^8.24.0"
+	},
+	"dependencies": {
+		"fflate": "^0.8.3",
+		"react-icons": "^5.7.0"
+	}
+}

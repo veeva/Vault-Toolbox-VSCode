@@ -1,0 +1,10 @@
+{
+	"comment": "VS Code user settings for the ExTester run (passed via `extest -o`). Keeps the test instance quiet and deterministic: no Welcome tab or workspace-trust modal stealing focus, no telemetry, no extension auto-update churn.",
+	"workbench.startupEditor": "none",
+	"security.workspace.trust.enabled": false,
+	"extensions.autoUpdate": false,
+	"extensions.autoCheckUpdates": false,
+	"telemetry.telemetryLevel": "off",
+	"update.mode": "none",
+	"window.restoreWindows": "none"
+}

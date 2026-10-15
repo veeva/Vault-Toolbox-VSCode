@@ -1,0 +1,8 @@
+RECREATE Picklist color__c (
+  label('Color'),
+  active(true),
+  Picklistentry red__c(
+    label('Red'),
+    value('Red')
+  )
+);

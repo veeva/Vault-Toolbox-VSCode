@@ -1,0 +1,2931 @@
+{
+	"generatedFrom": "live Vault [object Set] via SHOW FIELDS/RELATIONSHIPS + /query DescribeQuery",
+	"generatedAt": "2026-09-02",
+	"provenance": "docs/research/vql-builder-relationship-field-resolution.md (full-vault validation: 823/857 relationship queries OK, 0 SHOW FIELDS failures)",
+	"targets": {
+		"attachment_object__sys": [
+			{
+				"name": "attachment_external_id__sys",
+				"type": "id",
+				"label": "External ID"
+			},
+			{
+				"name": "attachment_id__sys",
+				"type": "id",
+				"label": "ID"
+			},
+			{
+				"name": "attachment_name__sys",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "attachment_version__sys",
+				"type": "Number",
+				"label": "Version"
+			},
+			{
+				"name": "created_by__sys",
+				"type": "Object",
+				"label": "Created By"
+			},
+			{
+				"name": "created_date__sys",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "description__sys",
+				"type": "String",
+				"label": "Description"
+			},
+			{
+				"name": "file_name__sys",
+				"type": "String",
+				"label": "File Name"
+			},
+			{
+				"name": "format__sys",
+				"type": "String",
+				"label": "Format"
+			},
+			{
+				"name": "latest_version__sys",
+				"type": "Boolean",
+				"label": "Is Latest Version"
+			},
+			{
+				"name": "md5checksum__sys",
+				"type": "String",
+				"label": "Checksum"
+			},
+			{
+				"name": "modified_by__sys",
+				"type": "Object",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "modified_date__sys",
+				"type": "DateTime",
+				"label": "Modified Date"
+			},
+			{
+				"name": "object_name__sys",
+				"type": "String",
+				"label": "Object Name"
+			},
+			{
+				"name": "object_record_id__sys",
+				"type": "String",
+				"label": "Record ID"
+			},
+			{
+				"name": "size__sys",
+				"type": "Number",
+				"label": "Size"
+			}
+		],
+		"rl_parent__c": [
+			{
+				"name": "case_narrative__c",
+				"type": "LongText",
+				"label": "Case Narrative"
+			},
+			{
+				"name": "created_by__v",
+				"type": "Object",
+				"label": "Created By"
+			},
+			{
+				"name": "created_date__v",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "global_id__sys",
+				"type": "String",
+				"label": "Global ID"
+			},
+			{
+				"name": "id",
+				"type": "ID",
+				"label": "ID"
+			},
+			{
+				"name": "lifecycle__v",
+				"type": "Component",
+				"label": "Lifecycle"
+			},
+			{
+				"name": "link__sys",
+				"type": "String",
+				"label": "Link"
+			},
+			{
+				"name": "modified_by__v",
+				"type": "Object",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "modified_date__v",
+				"type": "DateTime",
+				"label": "Last Modified Date"
+			},
+			{
+				"name": "name__v",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "picklist__c",
+				"type": "Picklist",
+				"label": "Picklist"
+			},
+			{
+				"name": "rich_text__c",
+				"type": "RichText",
+				"label": "Rich Text"
+			},
+			{
+				"name": "rl_related_outbound__c",
+				"type": "Object",
+				"label": "RL Related Outbound"
+			},
+			{
+				"name": "stage__sys",
+				"type": "Object",
+				"label": "Lifecycle Stage"
+			},
+			{
+				"name": "state__v",
+				"type": "Component",
+				"label": "Lifecycle State"
+			},
+			{
+				"name": "state_stage_id__sys",
+				"type": "Object",
+				"label": "Lifecycle State Stage ID"
+			},
+			{
+				"name": "status__v",
+				"type": "Picklist",
+				"label": "Status"
+			},
+			{
+				"name": "text__c",
+				"type": "String",
+				"label": "Text"
+			}
+		],
+		"attachment_doc__sys": [
+			{
+				"name": "attachment_external_id__sys",
+				"type": "id",
+				"label": "External ID"
+			},
+			{
+				"name": "attachment_id__sys",
+				"type": "id",
+				"label": "ID"
+			},
+			{
+				"name": "attachment_name__sys",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "attachment_version__sys",
+				"type": "Number",
+				"label": "Version"
+			},
+			{
+				"name": "created_by__sys",
+				"type": "Object",
+				"label": "Created By"
+			},
+			{
+				"name": "created_date__sys",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "description__sys",
+				"type": "String",
+				"label": "Description"
+			},
+			{
+				"name": "document_id__sys",
+				"type": "id",
+				"label": "Document ID"
+			},
+			{
+				"name": "document_version_id__sys",
+				"type": "MultiValueString",
+				"label": "Document Version ID"
+			},
+			{
+				"name": "file_name__sys",
+				"type": "String",
+				"label": "File Name"
+			},
+			{
+				"name": "format__sys",
+				"type": "String",
+				"label": "Format"
+			},
+			{
+				"name": "latest_version__sys",
+				"type": "Boolean",
+				"label": "Is Latest Version"
+			},
+			{
+				"name": "md5checksum__sys",
+				"type": "String",
+				"label": "Checksum"
+			},
+			{
+				"name": "modified_by__sys",
+				"type": "Object",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "modified_date__sys",
+				"type": "DateTime",
+				"label": "Modified Date"
+			},
+			{
+				"name": "size__sys",
+				"type": "Number",
+				"label": "Size"
+			}
+		],
+		"documents": [
+			{
+				"name": "annotations_all__v",
+				"type": "Calculated",
+				"label": "Annotations (All)"
+			},
+			{
+				"name": "annotations_anchors__v",
+				"type": "Calculated",
+				"label": "Annotations (Anchors)"
+			},
+			{
+				"name": "annotations_approved__v",
+				"type": "Calculated",
+				"label": "Annotations (Approved Links)"
+			},
+			{
+				"name": "annotations_auto__v",
+				"type": "Calculated",
+				"label": "Annotations (Auto Links)"
+			},
+			{
+				"name": "annotations_claim__v",
+				"type": "Calculated",
+				"label": "Annotations (Claim Links)"
+			},
+			{
+				"name": "annotations_lines__v",
+				"type": "Calculated",
+				"label": "Annotations (Lines)"
+			},
+			{
+				"name": "annotations_links__v",
+				"type": "Calculated",
+				"label": "Annotations (Links)"
+			},
+			{
+				"name": "annotations_notes__v",
+				"type": "Calculated",
+				"label": "Annotations (Notes)"
+			},
+			{
+				"name": "annotations_permalink__v",
+				"type": "Calculated",
+				"label": "Annotations (Permalinks)"
+			},
+			{
+				"name": "annotations_resolved__v",
+				"type": "Calculated",
+				"label": "Annotations (Resolved)"
+			},
+			{
+				"name": "annotations_suggested__v",
+				"type": "Calculated",
+				"label": "Suggested Links"
+			},
+			{
+				"name": "annotations_unresolved__v",
+				"type": "Calculated",
+				"label": "Annotations (Unresolved)"
+			},
+			{
+				"name": "archived_date__sys",
+				"type": "DateTime",
+				"label": "Archived Date"
+			},
+			{
+				"name": "batch_number__v",
+				"type": "ObjectReference",
+				"label": "Batch Number"
+			},
+			{
+				"name": "binder__v",
+				"type": "Boolean",
+				"label": "Binder"
+			},
+			{
+				"name": "binder_created_from__v",
+				"type": "ObjectReference",
+				"label": "Created From"
+			},
+			{
+				"name": "binder_last_autofiled_by__v",
+				"type": "ObjectReference",
+				"label": "Last Auto-Filed By"
+			},
+			{
+				"name": "binder_last_autofiled_date__v",
+				"type": "DateTime",
+				"label": "Last Auto-Filed Date"
+			},
+			{
+				"name": "binder_locked__v",
+				"type": "Boolean",
+				"label": "Binder Locked"
+			},
+			{
+				"name": "binder_metadata__v",
+				"type": "ObjectReference",
+				"label": "Metadata"
+			},
+			{
+				"name": "bookmarks_edited__sys",
+				"type": "Boolean",
+				"label": "Bookmarks Edited"
+			},
+			{
+				"name": "bound_source_major_version__v",
+				"type": "Number",
+				"label": "Bound Source Major Version"
+			},
+			{
+				"name": "bound_source_minor_version__v",
+				"type": "Number",
+				"label": "Bound Source Minor Version"
+			},
+			{
+				"name": "brand__c",
+				"type": "ObjectReference",
+				"label": "Brand"
+			},
+			{
+				"name": "cdn_content__v",
+				"type": "Boolean",
+				"label": "Digital Publishing"
+			},
+			{
+				"name": "certified_copy__v",
+				"type": "Boolean",
+				"label": "Certified Copy"
+			},
+			{
+				"name": "classification__v",
+				"type": "ObjectReference",
+				"label": "Classification"
+			},
+			{
+				"name": "country1__c",
+				"type": "ObjectReference",
+				"label": "Country"
+			},
+			{
+				"name": "country__c",
+				"type": "ObjectReference",
+				"label": "Country"
+			},
+			{
+				"name": "created_by__v",
+				"type": "ObjectReference",
+				"label": "Created By"
+			},
+			{
+				"name": "crosslink__v",
+				"type": "Boolean",
+				"label": "CrossLink"
+			},
+			{
+				"name": "crosslink_source_type__sys",
+				"type": "Picklist",
+				"label": "CrossLink Source Type"
+			},
+			{
+				"name": "custom_product__c",
+				"type": "ObjectReference",
+				"label": "Product"
+			},
+			{
+				"name": "custom_shared_field__c",
+				"type": "String",
+				"label": "Custom Shared Field"
+			},
+			{
+				"name": "description__v",
+				"type": "String",
+				"label": "Description"
+			},
+			{
+				"name": "disable_vault_overlays__v",
+				"type": "Boolean",
+				"label": "Disable Vault Overlays"
+			},
+			{
+				"name": "document_creation_date__v",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "document_number__v",
+				"type": "Autonumber",
+				"label": "Document Number"
+			},
+			{
+				"name": "dosage__c",
+				"type": "ObjectReference",
+				"label": "Dosage"
+			},
+			{
+				"name": "export_filename__v",
+				"type": "String",
+				"label": "Export File Name"
+			},
+			{
+				"name": "external_id__v",
+				"type": "String",
+				"label": "External ID"
+			},
+			{
+				"name": "file_created_by__v",
+				"type": "String",
+				"label": "File Created By"
+			},
+			{
+				"name": "file_created_date__v",
+				"type": "DateTime",
+				"label": "File Created Date"
+			},
+			{
+				"name": "file_meta_artist__v",
+				"type": "String",
+				"label": "Artist"
+			},
+			{
+				"name": "file_meta_author__v",
+				"type": "String",
+				"label": "Author"
+			},
+			{
+				"name": "file_meta_color_space__v",
+				"type": "String",
+				"label": "Color Space"
+			},
+			{
+				"name": "file_meta_comments__v",
+				"type": "String",
+				"label": "Media Comments"
+			},
+			{
+				"name": "file_meta_copyright__v",
+				"type": "String",
+				"label": "Copyright"
+			},
+			{
+				"name": "file_meta_duration__v",
+				"type": "String",
+				"label": "Duration"
+			},
+			{
+				"name": "file_meta_keywords__v",
+				"type": "String",
+				"label": "Keywords"
+			},
+			{
+				"name": "file_meta_location__v",
+				"type": "String",
+				"label": "Media Location"
+			},
+			{
+				"name": "file_meta_media_description__v",
+				"type": "String",
+				"label": "Media Description"
+			},
+			{
+				"name": "file_meta_title__v",
+				"type": "String",
+				"label": "Media Title"
+			},
+			{
+				"name": "file_meta_year__v",
+				"type": "Number",
+				"label": "Year"
+			},
+			{
+				"name": "file_modified_by__v",
+				"type": "String",
+				"label": "File Last Modified By"
+			},
+			{
+				"name": "file_modified_date__v",
+				"type": "DateTime",
+				"label": "File Last Modified Date"
+			},
+			{
+				"name": "file_security__v",
+				"type": "Picklist",
+				"label": "File Security"
+			},
+			{
+				"name": "filename__v",
+				"type": "ExactMatchString",
+				"label": "File Name"
+			},
+			{
+				"name": "format__v",
+				"type": "ExactMatchString",
+				"label": "Format"
+			},
+			{
+				"name": "ftp_source_location__v",
+				"type": "String",
+				"label": "FTP Source Location"
+			},
+			{
+				"name": "global_id__sys",
+				"type": "String",
+				"label": "Global ID"
+			},
+			{
+				"name": "global_version_id__sys",
+				"type": "String",
+				"label": "Global Version ID"
+			},
+			{
+				"name": "id",
+				"type": "Number",
+				"label": "id"
+			},
+			{
+				"name": "idWithVersion",
+				"type": "String",
+				"label": "idWithVersion"
+			},
+			{
+				"name": "last_modified_by__v",
+				"type": "ObjectReference",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "latest_source_major_version__v",
+				"type": "Number",
+				"label": "Latest Source Major Version"
+			},
+			{
+				"name": "latest_source_minor_version__v",
+				"type": "Number",
+				"label": "Latest Source Minor Version"
+			},
+			{
+				"name": "latest_version__v",
+				"type": "Calculated",
+				"label": "Is Latest Version"
+			},
+			{
+				"name": "lifecycle__v",
+				"type": "ObjectReference",
+				"label": "Lifecycle"
+			},
+			{
+				"name": "link__sys",
+				"type": "String",
+				"label": "Document Link"
+			},
+			{
+				"name": "link_status__v",
+				"type": "Picklist",
+				"label": "Link Status"
+			},
+			{
+				"name": "locked__v",
+				"type": "Boolean",
+				"label": "Checked Out"
+			},
+			{
+				"name": "locked_by__v",
+				"type": "ObjectReference",
+				"label": "Checked Out By"
+			},
+			{
+				"name": "locked_date__v",
+				"type": "DateTime",
+				"label": "Checked Out Date"
+			},
+			{
+				"name": "major_version_number__v",
+				"type": "Number",
+				"label": "Major Version Number"
+			},
+			{
+				"name": "md5checksum__v",
+				"type": "ExactMatchString",
+				"label": "Checksum"
+			},
+			{
+				"name": "merge_fields__v",
+				"type": "Boolean",
+				"label": "Merge Fields"
+			},
+			{
+				"name": "minor_version_number__v",
+				"type": "Number",
+				"label": "Minor Version Number"
+			},
+			{
+				"name": "name__v",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "notes__v",
+				"type": "String",
+				"label": "Notes"
+			},
+			{
+				"name": "object_reference__c",
+				"type": "ObjectReference",
+				"label": "Object Reference"
+			},
+			{
+				"name": "ocr_requested__sys",
+				"type": "Boolean",
+				"label": "OCR Requested"
+			},
+			{
+				"name": "pages__v",
+				"type": "Number",
+				"label": "Pages"
+			},
+			{
+				"name": "pages_ocred_percent__sys",
+				"type": "Number",
+				"label": "Pages OCR'ed (%)"
+			},
+			{
+				"name": "picklist_field__c",
+				"type": "Picklist",
+				"label": "Picklist Field"
+			},
+			{
+				"name": "preprocessed__v",
+				"type": "Boolean",
+				"label": "Preprocessed"
+			},
+			{
+				"name": "product1__c",
+				"type": "ObjectReference",
+				"label": "Product"
+			},
+			{
+				"name": "product__c",
+				"type": "ObjectReference",
+				"label": "Product"
+			},
+			{
+				"name": "product_application__c",
+				"type": "ObjectReference",
+				"label": "Product Application"
+			},
+			{
+				"name": "product_type__c",
+				"type": "Picklist",
+				"label": "Product Type"
+			},
+			{
+				"name": "production_cdn_url__v",
+				"type": "URL",
+				"label": "Production CDN URL"
+			},
+			{
+				"name": "related_claims__v",
+				"type": "ObjectReference",
+				"label": "Claims"
+			},
+			{
+				"name": "rendition_black_list_flag__v",
+				"type": "Boolean",
+				"label": "Rendition Black Listed"
+			},
+			{
+				"name": "rendition_profile__v",
+				"type": "ObjectReference",
+				"label": "Rendition Profile"
+			},
+			{
+				"name": "rl_parent__c",
+				"type": "ObjectReference",
+				"label": "RL Parent"
+			},
+			{
+				"name": "size__v",
+				"type": "Number",
+				"label": "Size"
+			},
+			{
+				"name": "source_binding_rule__v",
+				"type": "Picklist",
+				"label": "Source Binding Rule"
+			},
+			{
+				"name": "source_connection__sys",
+				"type": "ObjectReference",
+				"label": "Source Vault Connection"
+			},
+			{
+				"name": "source_connection_name__sys",
+				"type": "String",
+				"label": "Source Vault Connection Name"
+			},
+			{
+				"name": "source_document_id__v",
+				"type": "Number",
+				"label": "Source Document ID"
+			},
+			{
+				"name": "source_document_name__v",
+				"type": "String",
+				"label": "Source Document Name"
+			},
+			{
+				"name": "source_document_number__v",
+				"type": "String",
+				"label": "Source Number"
+			},
+			{
+				"name": "source_owner__v",
+				"type": "ObjectReference",
+				"label": "Source Owner"
+			},
+			{
+				"name": "source_vault_id__v",
+				"type": "Number",
+				"label": "Source Vault ID"
+			},
+			{
+				"name": "source_vault_name__v",
+				"type": "String",
+				"label": "Source Vault Name"
+			},
+			{
+				"name": "stage__sys",
+				"type": "ObjectReference",
+				"label": "Lifecycle Stage"
+			},
+			{
+				"name": "staging_cdn_url__v",
+				"type": "URL",
+				"label": "Staging CDN URL"
+			},
+			{
+				"name": "state_stage_id__sys",
+				"type": "ObjectReference",
+				"label": "Lifecycle State Stage ID"
+			},
+			{
+				"name": "status__v",
+				"type": "ObjectReference",
+				"label": "Status"
+			},
+			{
+				"name": "subtype__v",
+				"type": "ObjectReference",
+				"label": "Subtype"
+			},
+			{
+				"name": "suppress_rendition__v",
+				"type": "Boolean",
+				"label": "Rendition Suppressed"
+			},
+			{
+				"name": "tags__v",
+				"type": "Picklist",
+				"label": "Tags"
+			},
+			{
+				"name": "template_doctype__v",
+				"type": "ObjectReference",
+				"label": "Template Document Type"
+			},
+			{
+				"name": "test__c",
+				"type": "Picklist",
+				"label": "test"
+			},
+			{
+				"name": "test_object__c",
+				"type": "ObjectReference",
+				"label": "Test Object"
+			},
+			{
+				"name": "title__v",
+				"type": "String",
+				"label": "Title"
+			},
+			{
+				"name": "type__v",
+				"type": "ObjectReference",
+				"label": "Type"
+			},
+			{
+				"name": "version_created_by__v",
+				"type": "ObjectReference",
+				"label": "Version Created By"
+			},
+			{
+				"name": "version_creation_date__v",
+				"type": "DateTime",
+				"label": "Version Creation Date"
+			},
+			{
+				"name": "version_id",
+				"type": "String",
+				"label": "version_id"
+			},
+			{
+				"name": "version_link__sys",
+				"type": "String",
+				"label": "Document Version Link"
+			},
+			{
+				"name": "version_modified_date__v",
+				"type": "DateTime",
+				"label": "Last Modified Date"
+			},
+			{
+				"name": "vsdk_integration_status__c",
+				"type": "Picklist",
+				"label": "vSDK Integration Status"
+			},
+			{
+				"name": "yesno__c",
+				"type": "Boolean",
+				"label": "Yes/No"
+			}
+		],
+		"document_signature__sys": [
+			{
+				"name": "delegate_name__sys",
+				"type": "String",
+				"label": "delegate_name__sys"
+			},
+			{
+				"name": "delegate_title__sys",
+				"type": "String",
+				"label": "delegate_title__sys"
+			},
+			{
+				"name": "delegate_user__sys",
+				"type": "id",
+				"label": "delegate_user__sys"
+			},
+			{
+				"name": "id",
+				"type": "id",
+				"label": "id"
+			},
+			{
+				"name": "manifest_signature__sys",
+				"type": "Boolean",
+				"label": "manifest_signature__sys"
+			},
+			{
+				"name": "signature_meaning__sys",
+				"type": "String",
+				"label": "signature_meaning__sys"
+			},
+			{
+				"name": "signature_name__sys",
+				"type": "String",
+				"label": "signature_name__sys"
+			},
+			{
+				"name": "signature_time__sys",
+				"type": "DateTime",
+				"label": "signature_time__sys"
+			},
+			{
+				"name": "signature_title__sys",
+				"type": "String",
+				"label": "signature_title__sys"
+			},
+			{
+				"name": "signature_user__sys",
+				"type": "id",
+				"label": "signature_user__sys"
+			},
+			{
+				"name": "signed_document__sys",
+				"type": "id",
+				"label": "signed_document__sys"
+			},
+			{
+				"name": "signed_document_major_version__sys",
+				"type": "Number",
+				"label": "signed_document_major_version__sys"
+			},
+			{
+				"name": "signed_document_minor_version__sys",
+				"type": "Number",
+				"label": "signed_document_minor_version__sys"
+			},
+			{
+				"name": "task__sys",
+				"type": "String",
+				"label": "task__sys"
+			},
+			{
+				"name": "task_description__sys",
+				"type": "String",
+				"label": "task_description__sys"
+			},
+			{
+				"name": "task_label__sys",
+				"type": "String",
+				"label": "task_label__sys"
+			},
+			{
+				"name": "verdict__sys",
+				"type": "String",
+				"label": "verdict__sys"
+			},
+			{
+				"name": "verdict_name__sys",
+				"type": "String",
+				"label": "verdict_name__sys"
+			},
+			{
+				"name": "workflow__sys",
+				"type": "id",
+				"label": "workflow__sys"
+			},
+			{
+				"name": "workflow_label__sys",
+				"type": "String",
+				"label": "workflow_label__sys"
+			},
+			{
+				"name": "workflow_name__sys",
+				"type": "String",
+				"label": "workflow_name__sys"
+			}
+		],
+		"active_workflow_job__sys": [
+			{
+				"name": "cancelled_date__sys",
+				"type": "DateTime",
+				"label": "Cancelled Date"
+			},
+			{
+				"name": "completed_by__sys",
+				"type": "Object",
+				"label": "Completed By"
+			},
+			{
+				"name": "completed_date__sys",
+				"type": "DateTime",
+				"label": "Completed Date"
+			},
+			{
+				"name": "id",
+				"type": "idString",
+				"label": "ID"
+			},
+			{
+				"name": "iteration__sys",
+				"type": "Integer",
+				"label": "Iteration"
+			},
+			{
+				"name": "job__sys",
+				"type": "id",
+				"label": "Job"
+			},
+			{
+				"name": "job_name__sys",
+				"type": "String",
+				"label": "Job Name"
+			},
+			{
+				"name": "label__sys",
+				"type": "String",
+				"label": "Label"
+			},
+			{
+				"name": "modified_date__sys",
+				"type": "DateTime",
+				"label": "Modified Date"
+			},
+			{
+				"name": "name__sys",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "status__sys",
+				"type": "String",
+				"label": "Status"
+			},
+			{
+				"name": "workflow__sys",
+				"type": "ObjectReference",
+				"label": "Workflow"
+			}
+		],
+		"active_workflow__sys": [
+			{
+				"name": "cancellation_comment__sys",
+				"type": "String",
+				"label": "cancellation_comment__sys"
+			},
+			{
+				"name": "cancelled_date__sys",
+				"type": "DateTime",
+				"label": "cancelled_date__sys"
+			},
+			{
+				"name": "cardinality__sys",
+				"type": "Picklist",
+				"label": "cardinality__sys"
+			},
+			{
+				"name": "class__sys",
+				"type": "String",
+				"label": "class__sys"
+			},
+			{
+				"name": "completed_date__sys",
+				"type": "DateTime",
+				"label": "completed_date__sys"
+			},
+			{
+				"name": "created_by__sys",
+				"type": "Object",
+				"label": "created_by__sys"
+			},
+			{
+				"name": "created_date__sys",
+				"type": "DateTime",
+				"label": "created_date__sys"
+			},
+			{
+				"name": "due_date__sys",
+				"type": "DateTime",
+				"label": "due_date__sys"
+			},
+			{
+				"name": "id",
+				"type": "id",
+				"label": "id"
+			},
+			{
+				"name": "label__sys",
+				"type": "String",
+				"label": "label__sys"
+			},
+			{
+				"name": "modified_by__sys",
+				"type": "Object",
+				"label": "modified_by__sys"
+			},
+			{
+				"name": "modified_date__sys",
+				"type": "DateTime",
+				"label": "modified_date__sys"
+			},
+			{
+				"name": "name__sys",
+				"type": "String",
+				"label": "name__sys"
+			},
+			{
+				"name": "owner__sys",
+				"type": "Object",
+				"label": "owner__sys"
+			},
+			{
+				"name": "status__sys",
+				"type": "Picklist",
+				"label": "status__sys"
+			},
+			{
+				"name": "type__sys",
+				"type": "Picklist",
+				"label": "type__sys"
+			},
+			{
+				"name": "workflow_definition_version__sys",
+				"type": "Number",
+				"label": "workflow_definition_version__sys"
+			}
+		],
+		"user__sys": [
+			{
+				"name": "activation_date__sys",
+				"type": "Date",
+				"label": "Activation Date"
+			},
+			{
+				"name": "alias__sys",
+				"type": "String",
+				"label": "Alias"
+			},
+			{
+				"name": "annotation_replies__sys",
+				"type": "Picklist",
+				"label": "Annotation Replies"
+			},
+			{
+				"name": "company__sys",
+				"type": "String",
+				"label": "Company"
+			},
+			{
+				"name": "created_by__v",
+				"type": "Object",
+				"label": "Created By"
+			},
+			{
+				"name": "created_date__v",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "domain_admin__sys",
+				"type": "Boolean",
+				"label": "Domain Admin"
+			},
+			{
+				"name": "email__sys",
+				"type": "String",
+				"label": "Email"
+			},
+			{
+				"name": "favorite_doc_new_comment__sys",
+				"type": "Boolean",
+				"label": "Favorite Document New Comment"
+			},
+			{
+				"name": "favorite_doc_new_content__sys",
+				"type": "Boolean",
+				"label": "Favorite New Content"
+			},
+			{
+				"name": "favorite_doc_new_status__sys",
+				"type": "Boolean",
+				"label": "Favorite Document New Status"
+			},
+			{
+				"name": "favorite_documents__sys",
+				"type": "Picklist",
+				"label": "Favorite Documents"
+			},
+			{
+				"name": "fax__sys",
+				"type": "String",
+				"label": "Fax"
+			},
+			{
+				"name": "federated_id__sys",
+				"type": "String",
+				"label": "Federated ID"
+			},
+			{
+				"name": "first_name__sys",
+				"type": "String",
+				"label": "First Name"
+			},
+			{
+				"name": "global_id__sys",
+				"type": "String",
+				"label": "Global ID"
+			},
+			{
+				"name": "holiday_schedule__sys",
+				"type": "Object",
+				"label": "Holiday Schedule"
+			},
+			{
+				"name": "id",
+				"type": "ID",
+				"label": "ID"
+			},
+			{
+				"name": "image__sys",
+				"type": "Object",
+				"label": "Image"
+			},
+			{
+				"name": "inactivation_date__sys",
+				"type": "Date",
+				"label": "Inactivation Date"
+			},
+			{
+				"name": "label_set__sys",
+				"type": "Object",
+				"label": "Label Set"
+			},
+			{
+				"name": "landing_tab__sys",
+				"type": "Object",
+				"label": "Landing Tab"
+			},
+			{
+				"name": "language__sys",
+				"type": "Object",
+				"label": "Language"
+			},
+			{
+				"name": "last_login__sys",
+				"type": "DateTime",
+				"label": "Last Login"
+			},
+			{
+				"name": "last_name__sys",
+				"type": "String",
+				"label": "Last Name"
+			},
+			{
+				"name": "layout_profile__sys",
+				"type": "Object",
+				"label": "Layout Profile"
+			},
+			{
+				"name": "license_platformplatform__sys",
+				"type": "Picklist",
+				"label": "Platform"
+			},
+			{
+				"name": "license_type__sys",
+				"type": "Picklist",
+				"label": "License Type"
+			},
+			{
+				"name": "lifecycle__v",
+				"type": "Component",
+				"label": "Lifecycle"
+			},
+			{
+				"name": "link__sys",
+				"type": "String",
+				"label": "Link"
+			},
+			{
+				"name": "locale__sys",
+				"type": "Object",
+				"label": "Locale"
+			},
+			{
+				"name": "location__sys",
+				"type": "String",
+				"label": "Location"
+			},
+			{
+				"name": "locked_user__sys",
+				"type": "Boolean",
+				"label": "Locked User"
+			},
+			{
+				"name": "manager__sys",
+				"type": "Object",
+				"label": "Manager"
+			},
+			{
+				"name": "mobile_phone__sys",
+				"type": "String",
+				"label": "Mobile"
+			},
+			{
+				"name": "modified_by__v",
+				"type": "Object",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "modified_date__v",
+				"type": "DateTime",
+				"label": "Last Modified Date"
+			},
+			{
+				"name": "name__v",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "office_phone__sys",
+				"type": "String",
+				"label": "Office Phone"
+			},
+			{
+				"name": "original_user__sys",
+				"type": "Object",
+				"label": "Original User"
+			},
+			{
+				"name": "preferred_currency__sys",
+				"type": "Object",
+				"label": "Preferred Currency"
+			},
+			{
+				"name": "preferred_tab_col__sys",
+				"type": "Object",
+				"label": "Preferred Tab Collection"
+			},
+			{
+				"name": "product_announcement_emails__sys",
+				"type": "Boolean",
+				"label": "Product Announcement Emails"
+			},
+			{
+				"name": "salesforce_username__sys",
+				"type": "String",
+				"label": "Salesforce Username"
+			},
+			{
+				"name": "security_policy__sys",
+				"type": "Object",
+				"label": "Security Policy"
+			},
+			{
+				"name": "security_profile__sys",
+				"type": "Object",
+				"label": "Security Profile"
+			},
+			{
+				"name": "send_as_link__sys",
+				"type": "Picklist",
+				"label": "Send As Link"
+			},
+			{
+				"name": "send_welcome_email__sys",
+				"type": "Boolean",
+				"label": "Send Welcome Email on Activation Date"
+			},
+			{
+				"name": "shared_views__sys",
+				"type": "Picklist",
+				"label": "Shared Views"
+			},
+			{
+				"name": "state__v",
+				"type": "Component",
+				"label": "Lifecycle State"
+			},
+			{
+				"name": "status__v",
+				"type": "Picklist",
+				"label": "Status"
+			},
+			{
+				"name": "summary_email_interval__sys",
+				"type": "Picklist",
+				"label": "Summary Email Interval"
+			},
+			{
+				"name": "system_availability_emails__sys",
+				"type": "Boolean",
+				"label": "Service Availability Notifications"
+			},
+			{
+				"name": "system_owned_user__sys",
+				"type": "Boolean",
+				"label": "System Owned User"
+			},
+			{
+				"name": "tasks__sys",
+				"type": "Picklist",
+				"label": "Tasks"
+			},
+			{
+				"name": "timezone__sys",
+				"type": "Picklist",
+				"label": "Timezone"
+			},
+			{
+				"name": "title__sys",
+				"type": "String",
+				"label": "Title"
+			},
+			{
+				"name": "usage_level__sys",
+				"type": "Picklist",
+				"label": "Usage Level"
+			},
+			{
+				"name": "user_mentions__sys",
+				"type": "Picklist",
+				"label": "User Mentions"
+			},
+			{
+				"name": "username__sys",
+				"type": "String",
+				"label": "User Name"
+			}
+		],
+		"batch__v": [
+			{
+				"name": "created_by__v",
+				"type": "Object",
+				"label": "Created By"
+			},
+			{
+				"name": "created_date__v",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "description__v",
+				"type": "String",
+				"label": "Description"
+			},
+			{
+				"name": "external_id__v",
+				"type": "String",
+				"label": "External ID"
+			},
+			{
+				"name": "global_id__sys",
+				"type": "String",
+				"label": "Global ID"
+			},
+			{
+				"name": "id",
+				"type": "ID",
+				"label": "ID"
+			},
+			{
+				"name": "lifecycle__v",
+				"type": "Component",
+				"label": "Lifecycle"
+			},
+			{
+				"name": "link__sys",
+				"type": "String",
+				"label": "Link"
+			},
+			{
+				"name": "modified_by__v",
+				"type": "Object",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "modified_date__v",
+				"type": "DateTime",
+				"label": "Last Modified Date"
+			},
+			{
+				"name": "name__v",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "state__v",
+				"type": "Component",
+				"label": "Lifecycle State"
+			},
+			{
+				"name": "status__v",
+				"type": "Picklist",
+				"label": "Status"
+			}
+		],
+		"country__v": [
+			{
+				"name": "code__sys",
+				"type": "String",
+				"label": "Code"
+			},
+			{
+				"name": "country_cda__v",
+				"type": "Picklist",
+				"label": "Country"
+			},
+			{
+				"name": "created_by__v",
+				"type": "Object",
+				"label": "Created By"
+			},
+			{
+				"name": "created_date__v",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "external_id__v",
+				"type": "String",
+				"label": "External ID"
+			},
+			{
+				"name": "global_id__sys",
+				"type": "String",
+				"label": "Global ID"
+			},
+			{
+				"name": "id",
+				"type": "ID",
+				"label": "ID"
+			},
+			{
+				"name": "link__sys",
+				"type": "String",
+				"label": "Link"
+			},
+			{
+				"name": "modified_by__v",
+				"type": "Object",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "modified_date__v",
+				"type": "DateTime",
+				"label": "Last Modified Date"
+			},
+			{
+				"name": "name__v",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "status__v",
+				"type": "Picklist",
+				"label": "Status"
+			}
+		],
+		"binders": [
+			{
+				"name": "annotations_all__v",
+				"type": "Calculated",
+				"label": "Annotations (All)"
+			},
+			{
+				"name": "annotations_anchors__v",
+				"type": "Calculated",
+				"label": "Annotations (Anchors)"
+			},
+			{
+				"name": "annotations_approved__v",
+				"type": "Calculated",
+				"label": "Annotations (Approved Links)"
+			},
+			{
+				"name": "annotations_auto__v",
+				"type": "Calculated",
+				"label": "Annotations (Auto Links)"
+			},
+			{
+				"name": "annotations_claim__v",
+				"type": "Calculated",
+				"label": "Annotations (Claim Links)"
+			},
+			{
+				"name": "annotations_lines__v",
+				"type": "Calculated",
+				"label": "Annotations (Lines)"
+			},
+			{
+				"name": "annotations_links__v",
+				"type": "Calculated",
+				"label": "Annotations (Links)"
+			},
+			{
+				"name": "annotations_notes__v",
+				"type": "Calculated",
+				"label": "Annotations (Notes)"
+			},
+			{
+				"name": "annotations_permalink__v",
+				"type": "Calculated",
+				"label": "Annotations (Permalinks)"
+			},
+			{
+				"name": "annotations_resolved__v",
+				"type": "Calculated",
+				"label": "Annotations (Resolved)"
+			},
+			{
+				"name": "annotations_suggested__v",
+				"type": "Calculated",
+				"label": "Suggested Links"
+			},
+			{
+				"name": "annotations_unresolved__v",
+				"type": "Calculated",
+				"label": "Annotations (Unresolved)"
+			},
+			{
+				"name": "archived_date__sys",
+				"type": "DateTime",
+				"label": "Archived Date"
+			},
+			{
+				"name": "batch_number__v",
+				"type": "ObjectReference",
+				"label": "Batch Number"
+			},
+			{
+				"name": "binder__v",
+				"type": "Boolean",
+				"label": "Binder"
+			},
+			{
+				"name": "binder_created_from__v",
+				"type": "ObjectReference",
+				"label": "Created From"
+			},
+			{
+				"name": "binder_last_autofiled_by__v",
+				"type": "ObjectReference",
+				"label": "Last Auto-Filed By"
+			},
+			{
+				"name": "binder_last_autofiled_date__v",
+				"type": "DateTime",
+				"label": "Last Auto-Filed Date"
+			},
+			{
+				"name": "binder_locked__v",
+				"type": "Boolean",
+				"label": "Binder Locked"
+			},
+			{
+				"name": "binder_metadata__v",
+				"type": "ObjectReference",
+				"label": "Metadata"
+			},
+			{
+				"name": "bookmarks_edited__sys",
+				"type": "Boolean",
+				"label": "Bookmarks Edited"
+			},
+			{
+				"name": "bound_source_major_version__v",
+				"type": "Number",
+				"label": "Bound Source Major Version"
+			},
+			{
+				"name": "bound_source_minor_version__v",
+				"type": "Number",
+				"label": "Bound Source Minor Version"
+			},
+			{
+				"name": "brand__c",
+				"type": "ObjectReference",
+				"label": "Brand"
+			},
+			{
+				"name": "cdn_content__v",
+				"type": "Boolean",
+				"label": "Digital Publishing"
+			},
+			{
+				"name": "certified_copy__v",
+				"type": "Boolean",
+				"label": "Certified Copy"
+			},
+			{
+				"name": "classification__v",
+				"type": "ObjectReference",
+				"label": "Classification"
+			},
+			{
+				"name": "country1__c",
+				"type": "ObjectReference",
+				"label": "Country"
+			},
+			{
+				"name": "country__c",
+				"type": "ObjectReference",
+				"label": "Country"
+			},
+			{
+				"name": "created_by__v",
+				"type": "ObjectReference",
+				"label": "Created By"
+			},
+			{
+				"name": "crosslink__v",
+				"type": "Boolean",
+				"label": "CrossLink"
+			},
+			{
+				"name": "crosslink_source_type__sys",
+				"type": "Picklist",
+				"label": "CrossLink Source Type"
+			},
+			{
+				"name": "custom_product__c",
+				"type": "ObjectReference",
+				"label": "Product"
+			},
+			{
+				"name": "custom_shared_field__c",
+				"type": "String",
+				"label": "Custom Shared Field"
+			},
+			{
+				"name": "description__v",
+				"type": "String",
+				"label": "Description"
+			},
+			{
+				"name": "disable_vault_overlays__v",
+				"type": "Boolean",
+				"label": "Disable Vault Overlays"
+			},
+			{
+				"name": "document_creation_date__v",
+				"type": "DateTime",
+				"label": "Created Date"
+			},
+			{
+				"name": "document_number__v",
+				"type": "Autonumber",
+				"label": "Document Number"
+			},
+			{
+				"name": "dosage__c",
+				"type": "ObjectReference",
+				"label": "Dosage"
+			},
+			{
+				"name": "export_filename__v",
+				"type": "String",
+				"label": "Export File Name"
+			},
+			{
+				"name": "external_id__v",
+				"type": "String",
+				"label": "External ID"
+			},
+			{
+				"name": "file_created_by__v",
+				"type": "String",
+				"label": "File Created By"
+			},
+			{
+				"name": "file_created_date__v",
+				"type": "DateTime",
+				"label": "File Created Date"
+			},
+			{
+				"name": "file_meta_artist__v",
+				"type": "String",
+				"label": "Artist"
+			},
+			{
+				"name": "file_meta_author__v",
+				"type": "String",
+				"label": "Author"
+			},
+			{
+				"name": "file_meta_color_space__v",
+				"type": "String",
+				"label": "Color Space"
+			},
+			{
+				"name": "file_meta_comments__v",
+				"type": "String",
+				"label": "Media Comments"
+			},
+			{
+				"name": "file_meta_copyright__v",
+				"type": "String",
+				"label": "Copyright"
+			},
+			{
+				"name": "file_meta_duration__v",
+				"type": "String",
+				"label": "Duration"
+			},
+			{
+				"name": "file_meta_keywords__v",
+				"type": "String",
+				"label": "Keywords"
+			},
+			{
+				"name": "file_meta_location__v",
+				"type": "String",
+				"label": "Media Location"
+			},
+			{
+				"name": "file_meta_media_description__v",
+				"type": "String",
+				"label": "Media Description"
+			},
+			{
+				"name": "file_meta_title__v",
+				"type": "String",
+				"label": "Media Title"
+			},
+			{
+				"name": "file_meta_year__v",
+				"type": "Number",
+				"label": "Year"
+			},
+			{
+				"name": "file_modified_by__v",
+				"type": "String",
+				"label": "File Last Modified By"
+			},
+			{
+				"name": "file_modified_date__v",
+				"type": "DateTime",
+				"label": "File Last Modified Date"
+			},
+			{
+				"name": "file_security__v",
+				"type": "Picklist",
+				"label": "File Security"
+			},
+			{
+				"name": "filename__v",
+				"type": "ExactMatchString",
+				"label": "File Name"
+			},
+			{
+				"name": "format__v",
+				"type": "ExactMatchString",
+				"label": "Format"
+			},
+			{
+				"name": "ftp_source_location__v",
+				"type": "String",
+				"label": "FTP Source Location"
+			},
+			{
+				"name": "global_id__sys",
+				"type": "String",
+				"label": "Global ID"
+			},
+			{
+				"name": "global_version_id__sys",
+				"type": "String",
+				"label": "Global Version ID"
+			},
+			{
+				"name": "id",
+				"type": "Number",
+				"label": "id"
+			},
+			{
+				"name": "idWithVersion",
+				"type": "String",
+				"label": "idWithVersion"
+			},
+			{
+				"name": "last_modified_by__v",
+				"type": "ObjectReference",
+				"label": "Last Modified By"
+			},
+			{
+				"name": "latest_source_major_version__v",
+				"type": "Number",
+				"label": "Latest Source Major Version"
+			},
+			{
+				"name": "latest_source_minor_version__v",
+				"type": "Number",
+				"label": "Latest Source Minor Version"
+			},
+			{
+				"name": "latest_version__v",
+				"type": "Calculated",
+				"label": "Is Latest Version"
+			},
+			{
+				"name": "lifecycle__v",
+				"type": "ObjectReference",
+				"label": "Lifecycle"
+			},
+			{
+				"name": "link__sys",
+				"type": "String",
+				"label": "Document Link"
+			},
+			{
+				"name": "link_status__v",
+				"type": "Picklist",
+				"label": "Link Status"
+			},
+			{
+				"name": "locked__v",
+				"type": "Boolean",
+				"label": "Checked Out"
+			},
+			{
+				"name": "locked_by__v",
+				"type": "ObjectReference",
+				"label": "Checked Out By"
+			},
+			{
+				"name": "locked_date__v",
+				"type": "DateTime",
+				"label": "Checked Out Date"
+			},
+			{
+				"name": "major_version_number__v",
+				"type": "Number",
+				"label": "Major Version Number"
+			},
+			{
+				"name": "md5checksum__v",
+				"type": "ExactMatchString",
+				"label": "Checksum"
+			},
+			{
+				"name": "merge_fields__v",
+				"type": "Boolean",
+				"label": "Merge Fields"
+			},
+			{
+				"name": "minor_version_number__v",
+				"type": "Number",
+				"label": "Minor Version Number"
+			},
+			{
+				"name": "name__v",
+				"type": "String",
+				"label": "Name"
+			},
+			{
+				"name": "notes__v",
+				"type": "String",
+				"label": "Notes"
+			},
+			{
+				"name": "object_reference__c",
+				"type": "ObjectReference",
+				"label": "Object Reference"
+			},
+			{
+				"name": "ocr_requested__sys",
+				"type": "Boolean",
+				"label": "OCR Requested"
+			},
+			{
+				"name": "pages__v",
+				"type": "Number",
+				"label": "Pages"
+			},
+			{
+				"name": "pages_ocred_percent__sys",
+				"type": "Number",
+				"label": "Pages OCR'ed (%)"
+			},
+			{
+				"name": "picklist_field__c",
+				"type": "Picklist",
+				"label": "Picklist Field"
+			},
+			{
+				"name": "preprocessed__v",
+				"type": "Boolean",
+				"label": "Preprocessed"
+			},
+			{
+				"name": "product1__c",
+				"type": "ObjectReference",
+				"label": "Product"
+			},
+			{
+				"name": "product__c",
+				"type": "ObjectReference",
+				"label": "Product"
+			},
+			{
+				"name": "product_application__c",
+				"type": "ObjectReference",
+				"label": "Product Application"
+			},
+			{
+				"name": "product_type__c",
+				"type": "Picklist",
+				"label": "Product Type"
+			},
+			{
+				"name": "production_cdn_url__v",
+				"type": "URL",
+				"label": "Production CDN URL"
+			},
+			{
+				"name": "related_claims__v",
+				"type": "ObjectReference",
+				"label": "Claims"
+			},
+			{
+				"name": "rendition_black_list_flag__v",
+				"type": "Boolean",
+				"label": "Rendition Black Listed"
+			},
+			{
+				"name": "rendition_profile__v",
+				"type": "ObjectReference",
+				"label": "Rendition Profile"
+			},
+			{
+				"name": "rl_parent__c",
+				"type": "ObjectReference",
+				"label": "RL Parent"
+			},
+			{
+				"name": "size__v",
+				"type": "Number",
+				"label": "Size"
+			},
+			{
+				"name": "source_binding_rule__v",
+				"type": "Picklist",
+				"label": "Source Binding Rule"
+			},
+			{
+				"name": "source_connection__sys",
+				"type": "ObjectReference",
+				"label": "Source Vault Connection"
+			},
+			{
+				"name": "source_connection_name__sys",
+				"type": "String",
+				"label": "Source Vault Connection Name"
+			},
+			{
+				"name": "source_document_id__v",
+				"type": "Number",
+				"label": "Source Document ID"
+			},
+			{
+				"name": "source_document_name__v",
+				"type": "String",
+				"label": "Source Document Name"
+			},
+			{
+				"name": "source_document_number__v",
+				"type": "String",
+				"label": "Source Number"
+			},
+			{
+				"name": "source_owner__v",
+				"type": "ObjectReference",
+				"label": "Source Owner"
+			},
+			{
+				"name": "source_vault_id__v",
+				"type": "Number",
+				"label": "Source Vault ID"
+			},
+			{
+				"name": "source_vault_name__v",
+				"type": "String",
+				"label": "Source Vault Name"
+			},
+			{
+				"name": "stage__sys",
+				"type": "ObjectReference",
+				"label": "Lifecycle Stage"
+			},
+			{
+				"name": "staging_cdn_url__v",
+				"type": "URL",
+				"label": "Staging CDN URL"
+			},
+			{
+				"name": "state_stage_id__sys",
+				"type": "ObjectReference",
+				"label": "Lifecycle State Stage ID"
+			},
+			{
+				"name": "status__v",
+				"type": "ObjectReference",
+				"label": "Status"
+			},
+			{
+				"name": "subtype__v",
+				"type": "ObjectReference",
+				"label": "Subtype"
+			},
+			{
+				"name": "suppress_rendition__v",
+				"type": "Boolean",
+				"label": "Rendition Suppressed"
+			},
+			{
+				"name": "tags__v",
+				"type": "Picklist",
+				"label": "Tags"
+			},
+			{
+				"name": "template_doctype__v",
+				"type": "ObjectReference",
+				"label": "Template Document Type"
+			},
+			{
+				"name": "test__c",
+				"type": "Picklist",
+				"label": "test"
+			},
+			{
+				"name": "test_object__c",
+				"type": "ObjectReference",
+				"label": "Test Object"
+			},
+			{
+				"name": "title__v",
+				"type": "String",
+				"label": "Title"
+			},
+			{
+				"name": "type__v",
+				"type": "ObjectReference",
+				"label": "Type"
+			},
+			{
+				"name": "version_created_by__v",
+				"type": "ObjectReference",
+				"label": "Version Created By"
+			},
+			{
+				"name": "version_creation_date__v",
+				"type": "DateTime",
+				"label": "Version Creation Date"
+			},
+			{
+				"name": "version_id",
+				"type": "String",
+				"label": "version_id"
+			},
+			{
+				"name": "version_link__sys",
+				"type": "String",
+				"label": "Document Version Link"
+			},
+			{
+				"name": "version_modified_date__v",
+				"type": "DateTime",
+				"label": "Last Modified Date"
+			},
+			{
+				"name": "vsdk_integration_status__c",
+				"type": "Picklist",
+				"label": "vSDK Integration Status"
+			},
+			{
+				"name": "yesno__c",
+				"type": "Boolean",
+				"label": "Yes/No"
+			}
+		]
+	},
+	"relationships": {
+		"rl_parent__c": [
+			{
+				"name": "attachments__sysr",
+				"target": "attachment_object__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "document_rl_parent__cr",
+				"target": "rl_parent__c",
+				"type": "inbound"
+			},
+			{
+				"name": "rl_children__cr",
+				"target": "rl_child__c",
+				"type": "inbound"
+			},
+			{
+				"name": "rl_related_inbound__cr",
+				"target": "rl_related_inbound__c",
+				"type": "inbound"
+			},
+			{
+				"name": "rl_related_outbound__cr",
+				"target": "rl_related__c",
+				"type": "outbound"
+			},
+			{
+				"name": "rl_test_objects__cr",
+				"target": "rl_test__c",
+				"type": "inbound"
+			},
+			{
+				"name": "stage__sysr",
+				"target": "object_lifecycle_stage_label__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "state_stage_id__sysr",
+				"target": "object_lifecycle_state_stage__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "test_objects__cr",
+				"target": "test_object__c",
+				"type": "inbound"
+			}
+		],
+		"documents": [
+			{
+				"name": "attachments__sysr",
+				"target": "attachment_doc__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "doc_roles__sysr",
+				"target": "doc_role__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "document_batch_number__vr",
+				"target": "batch__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_binder_created_from__vr",
+				"target": "edl__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_binder_metadata__vr",
+				"target": "binder_metadata__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_brand__cr",
+				"target": "brand__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_country1__cr",
+				"target": "country__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_country__cr",
+				"target": "country__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_custom_product__cr",
+				"target": "product__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_dosage__cr",
+				"target": "dosage_form_strength__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_object_reference__cr",
+				"target": "object_with_doc_reference__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_product1__cr",
+				"target": "product__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_product__cr",
+				"target": "vsdk_product__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_product_application__cr",
+				"target": "vsdk_product_application__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_related_claims__vr",
+				"target": "annotation_keywords__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_rendition_profile__vr",
+				"target": "rendition_profile__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_rl_parent__cr",
+				"target": "rl_parent__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_signature__sysr",
+				"target": "document_signature__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "document_source_connection__sysr",
+				"target": "connection__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_stage__sysr",
+				"target": "doc_lifecycle_stage_label__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_state_stage_id__sysr",
+				"target": "doc_lifecycle_state_stage__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_template_doctype__vr",
+				"target": "doc_type_detail__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_test_object__cr",
+				"target": "test__c",
+				"type": "outbound"
+			},
+			{
+				"name": "renditions__sysr",
+				"target": "renditions",
+				"type": "inbound"
+			}
+		],
+		"active_workflow__sys": [
+			{
+				"name": "active_workflow_items__sysr",
+				"target": "active_workflow_item__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "active_workflow_jobs__sysr",
+				"target": "active_workflow_job__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "active_workflow_task_items__sysr",
+				"target": "active_workflow_task_item__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "active_workflow_tasks__sysr",
+				"target": "active_workflow_task__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "owner__sysr",
+				"target": "user__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "workflow_variables__sysr",
+				"target": "workflow_variable__sys",
+				"type": "inbound"
+			}
+		],
+		"user__sys": [
+			{
+				"name": "access_requests__cr",
+				"target": "access_request__c",
+				"type": "inbound"
+			},
+			{
+				"name": "active_workflow_jobs_completed_by__sysr",
+				"target": "active_workflow_job__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "active_workflow_tasks__sysr",
+				"target": "active_workflow_task__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "active_workflow_tasks_completed_by__sysr",
+				"target": "active_workflow_task__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "active_workflows__sysr",
+				"target": "active_workflow__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "activities__vr",
+				"target": "activity__v",
+				"type": "inbound"
+			},
+			{
+				"name": "agent_instance__sysr",
+				"target": "agent_instance__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "api_access_token__sysr",
+				"target": "api_access_token__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "attachments__sysr",
+				"target": "attachment_object__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "checklist_test_checklists1__sysr",
+				"target": "checklist_test_checklist__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "checklist_test_checklists__sysr",
+				"target": "checklist_test_checklist__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "checklists__sysr",
+				"target": "checklist__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "connections__sysr",
+				"target": "connection__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "device_registration__sysr",
+				"target": "device_registration__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "doc_role_users__sysr",
+				"target": "doc_role__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "document_usages__vr",
+				"target": "document_usage__v",
+				"type": "inbound"
+			},
+			{
+				"name": "email__sysr",
+				"target": "email__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "envelope__sysr",
+				"target": "envelope__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "glossary_events__sysr",
+				"target": "glossary_event__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "group_membership__sysr",
+				"target": "group_membership__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "holiday_schedule__sysr",
+				"target": "holiday_schedule__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "inactive_workflow_jobs_completed_by__sysr",
+				"target": "inactive_workflow_job__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "inactive_workflow_tasks__sysr",
+				"target": "inactive_workflow_task__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "inactive_workflow_tasks_completed_by__sysr",
+				"target": "inactive_workflow_task__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "inactive_workflows__sysr",
+				"target": "inactive_workflow__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "inbound_packages__vr",
+				"target": "vault_package__v",
+				"type": "inbound"
+			},
+			{
+				"name": "label_set__sysr",
+				"target": "labelset__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "landing_tab__sysr",
+				"target": "tab_group__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "language__sysr",
+				"target": "language__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "layout_profile__sysr",
+				"target": "layoutprofile__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "locale__sysr",
+				"target": "locale__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "manager__sysr",
+				"target": "user__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "original_user__sysr",
+				"target": "user__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "outbound_packages__vr",
+				"target": "outbound_package__v",
+				"type": "inbound"
+			},
+			{
+				"name": "persons__sysr",
+				"target": "person__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "preferred_currency__sysr",
+				"target": "currency__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "preferred_tab_col__sysr",
+				"target": "tabcollection__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "process_views__sysr",
+				"target": "process_view__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "report_usages__sysr",
+				"target": "report_usage__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "rl_test_objects__cr",
+				"target": "rl_test__c",
+				"type": "inbound"
+			},
+			{
+				"name": "security_policy__sysr",
+				"target": "security_policy__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "security_profile__sysr",
+				"target": "security_profile__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "share_inbox_documents1__sysr",
+				"target": "share_inbox_documents__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "share_inbox_documents__sysr",
+				"target": "share_inbox_documents__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "user_image_outbound__sysr",
+				"target": "media__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "user_role__sysr",
+				"target": "user_role__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "user_role_constraints__vr",
+				"target": "user_role_constraint__v",
+				"type": "inbound"
+			},
+			{
+				"name": "user_role_setup__vr",
+				"target": "user_role_setup__v",
+				"type": "inbound"
+			},
+			{
+				"name": "user_tasks__vr",
+				"target": "user_task__v",
+				"type": "inbound"
+			},
+			{
+				"name": "users1__sysr",
+				"target": "user__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "users__sysr",
+				"target": "user__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "vault_file_manager_users__sysr",
+				"target": "vfm_user__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "veevaid_invites_vault_user_creations1__sysr",
+				"target": "veevaid_invite_vault_user_creation__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "veevaid_invites_vault_user_creations__sysr",
+				"target": "veevaid_invite_vault_user_creation__sys",
+				"type": "inbound"
+			}
+		],
+		"batch__v": [
+			{
+				"name": "attachments__sysr",
+				"target": "attachment_object__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "document_batch_number__vr",
+				"target": "batch__v",
+				"type": "inbound"
+			},
+			{
+				"name": "rl_children__cr",
+				"target": "rl_child__c",
+				"type": "inbound"
+			}
+		],
+		"country__v": [
+			{
+				"name": "attachments__sysr",
+				"target": "attachment_object__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "document_country1__cr",
+				"target": "country__v",
+				"type": "inbound"
+			},
+			{
+				"name": "document_country__cr",
+				"target": "country__v",
+				"type": "inbound"
+			},
+			{
+				"name": "products__cr",
+				"target": "product__c",
+				"type": "inbound"
+			},
+			{
+				"name": "vsdk_create_product_applications__cr",
+				"target": "vsdk_create_product_application__c",
+				"type": "inbound"
+			},
+			{
+				"name": "vsdk_product_applications__cr",
+				"target": "vsdk_product_application__c",
+				"type": "inbound"
+			}
+		],
+		"binders": [
+			{
+				"name": "binder_nodes__sysr",
+				"target": "binder_node__sys",
+				"type": "inbound"
+			},
+			{
+				"name": "document_batch_number__vr",
+				"target": "batch__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_binder_created_from__vr",
+				"target": "edl__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_binder_metadata__vr",
+				"target": "binder_metadata__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_brand__cr",
+				"target": "brand__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_country1__cr",
+				"target": "country__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_country__cr",
+				"target": "country__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_custom_product__cr",
+				"target": "product__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_dosage__cr",
+				"target": "dosage_form_strength__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_object_reference__cr",
+				"target": "object_with_doc_reference__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_product1__cr",
+				"target": "product__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_product__cr",
+				"target": "vsdk_product__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_product_application__cr",
+				"target": "vsdk_product_application__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_related_claims__vr",
+				"target": "annotation_keywords__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_rendition_profile__vr",
+				"target": "rendition_profile__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_rl_parent__cr",
+				"target": "rl_parent__c",
+				"type": "outbound"
+			},
+			{
+				"name": "document_source_connection__sysr",
+				"target": "connection__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_stage__sysr",
+				"target": "doc_lifecycle_stage_label__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_state_stage_id__sysr",
+				"target": "doc_lifecycle_state_stage__sys",
+				"type": "outbound"
+			},
+			{
+				"name": "document_template_doctype__vr",
+				"target": "doc_type_detail__v",
+				"type": "outbound"
+			},
+			{
+				"name": "document_test_object__cr",
+				"target": "test__c",
+				"type": "outbound"
+			}
+		]
+	},
+	"cases": [
+		{
+			"parent": "rl_parent__c",
+			"relationship": "attachments__sysr",
+			"target": "attachment_object__sys",
+			"type": "inbound",
+			"inbound": true,
+			"note": "object attachment (the original bug)",
+			"validatedVql": "SELECT id, (SELECT attachment_external_id__sys, attachment_id__sys, attachment_name__sys, attachment_version__sys, created_by__sys, created_date__sys, description__sys, file_name__sys, format__sys, latest_version__sys, md5checksum__sys, modified_by__sys, modified_date__sys, object_name__sys, object_record_id__sys, size__sys FROM attachments__sysr) FROM rl_parent__c PAGESIZE 1",
+			"verdict": "SUCCESS"
+		},
+		{
+			"parent": "documents",
+			"relationship": "attachments__sysr",
+			"target": "attachment_doc__sys",
+			"type": "inbound",
+			"inbound": true,
+			"note": "document attachment (auto object/doc split)",
+			"validatedVql": "SELECT id, (SELECT attachment_external_id__sys, attachment_id__sys, attachment_name__sys, attachment_version__sys, created_by__sys, created_date__sys, description__sys, document_id__sys, document_version_id__sys, file_name__sys, format__sys, latest_version__sys, md5checksum__sys, modified_by__sys, modified_date__sys, size__sys FROM attachments__sysr) FROM documents PAGESIZE 1",
+			"verdict": "SUCCESS"
+		},
+		{
+			"parent": "documents",
+			"relationship": "document_signature__sysr",
+			"target": "document_signature__sys",
+			"type": "inbound",
+			"inbound": true,
+			"note": "document signature subquery-only target",
+			"validatedVql": "SELECT id, (SELECT delegate_name__sys, delegate_title__sys, delegate_user__sys, id, manifest_signature__sys, signature_meaning__sys, signature_name__sys, signature_time__sys, signature_title__sys, signature_user__sys, signed_document__sys, signed_document_major_version__sys, signed_document_minor_version__sys, task__sys, task_description__sys, task_label__sys, verdict__sys, verdict_name__sys, workflow__sys, workflow_label__sys, workflow_name__sys FROM document_signature__sysr) FROM documents PAGESIZE 1",
+			"verdict": "SUCCESS"
+		},
+		{
+			"parent": "active_workflow__sys",
+			"relationship": "active_workflow_jobs__sysr",
+			"target": "active_workflow_job__sys",
+			"type": "inbound",
+			"inbound": true,
+			"note": "normal object inbound subquery",
+			"validatedVql": "SELECT id, (SELECT cancelled_date__sys, completed_by__sys, completed_date__sys, id, iteration__sys, job__sys, job_name__sys, label__sys, modified_date__sys, name__sys, status__sys, workflow__sys FROM active_workflow_jobs__sysr) FROM active_workflow__sys PAGESIZE 1",
+			"verdict": "SUCCESS"
+		},
+		{
+			"parent": "active_workflow__sys",
+			"relationship": "owner__sysr",
+			"target": "user__sys",
+			"type": "outbound",
+			"inbound": false,
+			"note": "outbound parent traversal to user__sys",
+			"validatedVql": "SELECT owner__sysr.id FROM active_workflow__sys PAGESIZE 1",
+			"verdict": "SUCCESS"
+		},
+		{
+			"parent": "user__sys",
+			"relationship": "users__sysr",
+			"target": "user__sys",
+			"type": "inbound",
+			"inbound": true,
+			"note": "genuine self-reference inbound (must stay OK)",
+			"validatedVql": "SELECT id, (SELECT activation_date__sys, alias__sys, annotation_replies__sys, company__sys, created_by__v, created_date__v, domain_admin__sys, email__sys, favorite_doc_new_comment__sys, favorite_doc_new_content__sys, favorite_doc_new_status__sys, favorite_documents__sys, fax__sys, federated_id__sys, first_name__sys, global_id__sys, holiday_schedule__sys, id, image__sys, inactivation_date__sys, label_set__sys, landing_tab__sys, language__sys, last_login__sys, last_name__sys, layout_profile__sys, license_platformplatform__sys, license_type__sys, lifecycle__v, link__sys, locale__sys, location__sys, locked_user__sys, manager__sys, mobile_phone__sys, modified_by__v, modified_date__v, name__v, office_phone__sys, original_user__sys, preferred_currency__sys, preferred_tab_col__sys, product_announcement_emails__sys, salesforce_username__sys, security_policy__sys, security_profile__sys, send_as_link__sys, send_welcome_email__sys, shared_views__sys, state__v, status__v, summary_email_interval__sys, system_availability_emails__sys, system_owned_user__sys, tasks__sys, timezone__sys, title__sys, usage_level__sys, user_mentions__sys, username__sys FROM users__sysr) FROM user__sys PAGESIZE 1",
+			"verdict": "SUCCESS"
+		},
+		{
+			"parent": "batch__v",
+			"relationship": "document_batch_number__vr",
+			"target": "batch__v",
+			"type": "inbound",
+			"inbound": true,
+			"note": "doc-cross-ref inbound: misleading self-target",
+			"validatedVql": "SELECT id, (SELECT created_by__v, created_date__v, description__v, external_id__v, global_id__sys, id, lifecycle__v, link__sys, modified_by__v, modified_date__v, name__v, state__v, status__v FROM document_batch_number__vr) FROM batch__v PAGESIZE 1",
+			"verdict": "FAILURE",
+			"error": "Unknown field 'created_date__v' in 'select fields'"
+		},
+		{
+			"parent": "country__v",
+			"relationship": "document_country__cr",
+			"target": "country__v",
+			"type": "inbound",
+			"inbound": true,
+			"note": "doc-cross-ref inbound: misleading self-target",
+			"validatedVql": "SELECT id, (SELECT code__sys, country_cda__v, created_by__v, created_date__v, external_id__v, global_id__sys, id, link__sys, modified_by__v, modified_date__v, name__v, status__v FROM document_country__cr) FROM country__v PAGESIZE 1",
+			"verdict": "FAILURE",
+			"error": "Unknown field 'code__sys' in 'select fields'"
+		},
+		{
+			"parent": "documents",
+			"relationship": "document_country1__cr",
+			"target": "country__v",
+			"type": "outbound",
+			"inbound": false,
+			"note": "doc-cross-ref outbound: invalid lookup",
+			"validatedVql": "SELECT document_country1__cr.id FROM documents PAGESIZE 1",
+			"verdict": "FAILURE",
+			"error": "Invalid lookup relationship [document_country1__cr]"
+		},
+		{
+			"parent": "binders",
+			"relationship": "document_batch_number__vr",
+			"target": "batch__v",
+			"type": "outbound",
+			"inbound": false,
+			"note": "doc-cross-ref outbound from binders: invalid lookup",
+			"validatedVql": "SELECT document_batch_number__vr.id FROM binders PAGESIZE 1",
+			"verdict": "FAILURE",
+			"error": "Invalid lookup relationship [document_batch_number__vr]"
+		}
+	]
+}

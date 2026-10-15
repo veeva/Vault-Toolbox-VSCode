@@ -1,0 +1,3592 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://example.veevavault.com/api/"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "private, no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:13 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1999",
+        "x-vaultapi-dailylimit": "999999",
+        "x-vaultapi-dailylimitremaining": "999999",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-2472545-1-1786126152771",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "values": {
+          "v7.0": "https://example.veevavault.com/api/v7.0",
+          "v8.0": "https://example.veevavault.com/api/v8.0",
+          "v9.0": "https://example.veevavault.com/api/v9.0",
+          "v10.0": "https://example.veevavault.com/api/v10.0",
+          "v11.0": "https://example.veevavault.com/api/v11.0",
+          "v12.0": "https://example.veevavault.com/api/v12.0",
+          "v13.0": "https://example.veevavault.com/api/v13.0",
+          "v14.0": "https://example.veevavault.com/api/v14.0",
+          "v15.0": "https://example.veevavault.com/api/v15.0",
+          "v16.0": "https://example.veevavault.com/api/v16.0",
+          "v17.1": "https://example.veevavault.com/api/v17.1",
+          "v17.2": "https://example.veevavault.com/api/v17.2",
+          "v17.3": "https://example.veevavault.com/api/v17.3",
+          "v18.1": "https://example.veevavault.com/api/v18.1",
+          "v18.2": "https://example.veevavault.com/api/v18.2",
+          "v18.3": "https://example.veevavault.com/api/v18.3",
+          "v19.1": "https://example.veevavault.com/api/v19.1",
+          "v19.2": "https://example.veevavault.com/api/v19.2",
+          "v19.3": "https://example.veevavault.com/api/v19.3",
+          "v20.1": "https://example.veevavault.com/api/v20.1",
+          "v20.2": "https://example.veevavault.com/api/v20.2",
+          "v20.3": "https://example.veevavault.com/api/v20.3",
+          "v21.1": "https://example.veevavault.com/api/v21.1",
+          "v21.2": "https://example.veevavault.com/api/v21.2",
+          "v21.3": "https://example.veevavault.com/api/v21.3",
+          "v22.1": "https://example.veevavault.com/api/v22.1",
+          "v22.2": "https://example.veevavault.com/api/v22.2",
+          "v22.3": "https://example.veevavault.com/api/v22.3",
+          "v23.1": "https://example.veevavault.com/api/v23.1",
+          "v23.2": "https://example.veevavault.com/api/v23.2",
+          "v23.3": "https://example.veevavault.com/api/v23.3",
+          "v24.1": "https://example.veevavault.com/api/v24.1",
+          "v24.2": "https://example.veevavault.com/api/v24.2",
+          "v24.3": "https://example.veevavault.com/api/v24.3",
+          "v25.1": "https://example.veevavault.com/api/v25.1",
+          "v25.2": "https://example.veevavault.com/api/v25.2",
+          "v25.3": "https://example.veevavault.com/api/v25.3",
+          "v26.1": "https://example.veevavault.com/api/v26.1",
+          "v26.2": "https://example.veevavault.com/api/v26.2"
+        }
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://example.veevavault.com/api/v26.2/objects/users/me"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "private, no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:13 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1998",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-2472549-35-1786126153057",
+        "x-vaultapi-status": "SUCCESS",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "users": [
+          {
+            "user": {
+              "user_name__v": "jimmy.mcnulty@example-domain.com",
+              "user_first_name__v": "Jimmy",
+              "user_last_name__v": "McNulty",
+              "user_email__v": "jimmy.mcnulty@example.com",
+              "user_timezone__v": "America/Chicago",
+              "user_locale__v": "en_US",
+              "is_domain_admin__v": true,
+              "active__v": true,
+              "security_policy_id__v": 49687,
+              "id": 14720547,
+              "created_date__v": "2023-01-18T18:29:20.000Z",
+              "created_by__v": 13857979,
+              "modified_date__v": "2025-02-08T01:44:39.000Z",
+              "modified_by__v": 1,
+              "domain_id__v": 8111,
+              "last_login__v": "2026-08-07T18:07:52.000Z",
+              "user_language__v": "en",
+              "group_id__v": [
+                1,
+                1394917494102,
+                1394917494301,
+                1394917493302,
+                6
+              ],
+              "security_profile__v": "vault_owner__v",
+              "license_type__v": "full__v"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://example.veevavault.com/api/v26.2/objects/domain?include_application=true"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "private, no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:13 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1997",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-2472552-28-1786126153243",
+        "x-vaultapi-status": "SUCCESS",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "responseMessage": "Success",
+        "domain__v": {
+          "domain_name__v": "example-domain",
+          "domain_type__v": "Sandbox",
+          "vaults__v": [
+            {
+              "id": 132095,
+              "vault_name__v": "Platform Main",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 137563,
+              "vault_name__v": "Platform General",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 137565,
+              "vault_name__v": "Platform Limited",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 175951,
+              "vault_name__v": "VAPIL LR",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 187925,
+              "vault_name__v": "VAPIL Testing",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 201287,
+              "vault_name__v": "Direct Data HR Demo",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 201289,
+              "vault_name__v": "Direct Data Finance Demo",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 217864,
+              "vault_name__v": "Direct Data Testing",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 228136,
+              "vault_name__v": "Custom Pages Vault LR",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 232635,
+              "vault_name__v": "Direct Data Testing LR",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 237553,
+              "vault_name__v": "Vault Toolbox",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 278331,
+              "vault_name__v": "Toolbox Testing",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 315727,
+              "vault_name__v": "Direct Data HR CloneTest",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 317037,
+              "vault_name__v": "Eric LR",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 317039,
+              "vault_name__v": "Eric GR",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            },
+            {
+              "id": 322466,
+              "vault_name__v": "Custom Pages Demo",
+              "vault_status__v": "Active",
+              "vault_family__v": {
+                "name__v": "platform__v",
+                "label__v": "Platform"
+              },
+              "vault_application__v": [
+                {
+                  "name": "platform_platform__sys",
+                  "label": "Platform"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://example.veevavault.com/api/v26.2/query",
+      "body": "q=SHOW+TARGETS"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:15 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1996",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-2472555-18-1786126153458",
+        "x-vaultapi-resource": "vqe_targets__sys",
+        "x-vaultapi-status": "SUCCESS",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "queryDescribe": {
+          "type": "show_targets__sys",
+          "object": {
+            "name": null,
+            "label": null,
+            "label_plural": null
+          },
+          "fields": [
+            {
+              "label": "name__sys",
+              "type": "String",
+              "name": "name"
+            },
+            {
+              "label": "label__sys",
+              "type": "String",
+              "name": "label"
+            },
+            {
+              "label": "labels__sys",
+              "type": "String",
+              "name": "label_plural"
+            }
+          ]
+        },
+        "responseDetails": {
+          "pagesize": 1000,
+          "pageoffset": 0,
+          "size": 192,
+          "total": 192
+        },
+        "data": [
+          {
+            "name": "access_request__c",
+            "label": "Access Request",
+            "label_plural": "Access Requests"
+          },
+          {
+            "name": "active_workflow__sys",
+            "label": "active_workflow__sys",
+            "label_plural": "active_workflow__sys"
+          },
+          {
+            "name": "active_workflow_item__sys",
+            "label": "active_workflow_item__sys",
+            "label_plural": "active_workflow_item__sys"
+          },
+          {
+            "name": "active_workflow_job__sys",
+            "label": "Active Workflow Job",
+            "label_plural": "Active Workflow Jobs"
+          },
+          {
+            "name": "active_workflow_task__sys",
+            "label": "active_workflow_task__sys",
+            "label_plural": "active_workflow_task__sys"
+          },
+          {
+            "name": "active_workflow_task_item__sys",
+            "label": "active_workflow_task_item__sys",
+            "label_plural": "active_workflow_task_item__sys"
+          },
+          {
+            "name": "activity__v",
+            "label": "Activity",
+            "label_plural": "Activities"
+          },
+          {
+            "name": "agent_action_execution__sys",
+            "label": "Agent Action Execution",
+            "label_plural": "Agent Action Executions"
+          },
+          {
+            "name": "agent_instance__sys",
+            "label": "Agent Instance",
+            "label_plural": "Agent Instances"
+          },
+          {
+            "name": "annotation_keyword_targets__sys",
+            "label": "Claim Targets",
+            "label_plural": "Claims Targets"
+          },
+          {
+            "name": "annotation_keywords__sys",
+            "label": "Claim",
+            "label_plural": "Claims"
+          },
+          {
+            "name": "answer_library_design__sys",
+            "label": "Answer Library Design",
+            "label_plural": "Answer Library Designs"
+          },
+          {
+            "name": "api_access_token__sys",
+            "label": "API Access Token",
+            "label_plural": "API Access Tokens"
+          },
+          {
+            "name": "application_role__v",
+            "label": "Application Role",
+            "label_plural": "Application Roles"
+          },
+          {
+            "name": "archived_documents",
+            "label": "archived_documents",
+            "label_plural": "archived_documents"
+          },
+          {
+            "name": "available_answer__sys",
+            "label": "Available Answer",
+            "label_plural": "Available Answers"
+          },
+          {
+            "name": "available_answer_design__sys",
+            "label": "Available Answer Design",
+            "label_plural": "Available Answer Designs"
+          },
+          {
+            "name": "batch__v",
+            "label": "Batch",
+            "label_plural": "Batches"
+          },
+          {
+            "name": "binder_metadata__v",
+            "label": "Binder Section Metadata",
+            "label_plural": "Binder Sections Metadata"
+          },
+          {
+            "name": "binder_node__sys",
+            "label": "binder_node__sys",
+            "label_plural": "binder_node__sys"
+          },
+          {
+            "name": "binders",
+            "label": "binders",
+            "label_plural": "binders"
+          },
+          {
+            "name": "brand__c",
+            "label": "Brand",
+            "label_plural": "Brands"
+          },
+          {
+            "name": "ccds_event__c",
+            "label": "CCDS Event",
+            "label_plural": "CCDS Events"
+          },
+          {
+            "name": "cdn_distribution_status__v",
+            "label": "CDN Distribution Status",
+            "label_plural": "CDN Distribution Statuses"
+          },
+          {
+            "name": "channel_usage__v",
+            "label": "Channel Usage",
+            "label_plural": "Channel Usages"
+          },
+          {
+            "name": "checklist__sys",
+            "label": "Checklist",
+            "label_plural": "Checklists"
+          },
+          {
+            "name": "checklist_design__sys",
+            "label": "Checklist Design",
+            "label_plural": "Checklist Designs"
+          },
+          {
+            "name": "checklist_design_master__sys",
+            "label": "Checklist Design Master",
+            "label_plural": "Checklist Design Masters"
+          },
+          {
+            "name": "checklist_design_translation__sys",
+            "label": "Checklist Design Translation",
+            "label_plural": "Checklist Design Translations"
+          },
+          {
+            "name": "checklist_field_translation__sys",
+            "label": "Checklist Field Translation",
+            "label_plural": "Checklist Field Translations"
+          },
+          {
+            "name": "checklist_test__c",
+            "label": "Checklist Test",
+            "label_plural": "Checklist Tests"
+          },
+          {
+            "name": "checklist_test_available_answer__sys",
+            "label": "Checklist Test Available Answer",
+            "label_plural": "Checklist Test Available Answers"
+          },
+          {
+            "name": "checklist_test_checklist__sys",
+            "label": "Checklist Test Checklist",
+            "label_plural": "Checklist Test Checklists"
+          },
+          {
+            "name": "checklist_test_dependency__sys",
+            "label": "Checklist Test Dependency",
+            "label_plural": "Checklist Test Dependencies"
+          },
+          {
+            "name": "checklist_test_response__sys",
+            "label": "Checklist Test Response",
+            "label_plural": "Checklist Test Responses"
+          },
+          {
+            "name": "checklist_test_response_doc__sys",
+            "label": "Checklist Test Response-Doc",
+            "label_plural": "Checklist Test Response-Doc"
+          },
+          {
+            "name": "checklist_test_response_ord_ans__sys",
+            "label": "Checklist Test Response-Ord-Answer",
+            "label_plural": "Checklist Test Response-Ord-Answer"
+          },
+          {
+            "name": "checklist_test_response_ref_doc__sys",
+            "label": "Checklist Test Response-Ref-Doc",
+            "label_plural": "Checklist Test Response-Ref-Docs"
+          },
+          {
+            "name": "checklist_test_response_sel_ans__sys",
+            "label": "Checklist Test Response-Sel-Answer",
+            "label_plural": "Checklist Test Response-Sel-Answer"
+          },
+          {
+            "name": "checklist_test_section__sys",
+            "label": "Checklist Test Section",
+            "label_plural": "Checklist Test Sections"
+          },
+          {
+            "name": "checklist_test_subchecklist__sys",
+            "label": "Checklist Test Sub-checklist",
+            "label_plural": "Checklist Test Sub-checklists"
+          },
+          {
+            "name": "circular_a__c",
+            "label": "Circular A",
+            "label_plural": "Circular A"
+          },
+          {
+            "name": "circular_b__c",
+            "label": "Circular B",
+            "label_plural": "Circular B"
+          },
+          {
+            "name": "circular_c__c",
+            "label": "Circular C",
+            "label_plural": "Circular C"
+          },
+          {
+            "name": "connection__sys",
+            "label": "Connection",
+            "label_plural": "Connections"
+          },
+          {
+            "name": "connection_authorization__sys",
+            "label": "Connection Authorization",
+            "label_plural": "Connection Authorizations"
+          },
+          {
+            "name": "connection_backed_crosslink__sys",
+            "label": "Connection Backed CrossLink",
+            "label_plural": "Connection Backed CrossLinks"
+          },
+          {
+            "name": "connection_client__sys",
+            "label": "Connection Client",
+            "label_plural": "Connection Clients"
+          },
+          {
+            "name": "connection_stats__sys",
+            "label": "Connection Stats",
+            "label_plural": "Connection Stats"
+          },
+          {
+            "name": "country__v",
+            "label": "Country",
+            "label_plural": "Countries"
+          },
+          {
+            "name": "crosslink_source_event__sys",
+            "label": "Crosslink Source Event",
+            "label_plural": "Crosslink Source Events"
+          },
+          {
+            "name": "currency__sys",
+            "label": "Currency",
+            "label_plural": "Currency"
+          },
+          {
+            "name": "daily_agent_action_activity__sys",
+            "label": "Daily Agent Action Activity",
+            "label_plural": "Daily Agent Action Activities"
+          },
+          {
+            "name": "daily_agent_activity__sys",
+            "label": "Daily Agent Activity",
+            "label_plural": "Daily Agent Activities"
+          },
+          {
+            "name": "dataset__sys",
+            "label": "Dataset",
+            "label_plural": "Datasets"
+          },
+          {
+            "name": "dataset_item__sys",
+            "label": "Dataset Item",
+            "label_plural": "Dataset Items"
+          },
+          {
+            "name": "date__sys",
+            "label": "Date",
+            "label_plural": "Dates"
+          },
+          {
+            "name": "dependency__sys",
+            "label": "Dependency",
+            "label_plural": "Dependencies"
+          },
+          {
+            "name": "dependency_design__sys",
+            "label": "Dependency Design",
+            "label_plural": "Dependency Designs"
+          },
+          {
+            "name": "doc_lifecycle_stage_label__sys",
+            "label": "Document Lifecycle Stage Label",
+            "label_plural": "Document Lifecycle Stage Labels"
+          },
+          {
+            "name": "doc_lifecycle_state_stage__sys",
+            "label": "Document Lifecycle State-Stage",
+            "label_plural": "Document Lifecycle State-Stages"
+          },
+          {
+            "name": "doc_role__sys",
+            "label": "Document Role",
+            "label_plural": "Document Roles"
+          },
+          {
+            "name": "doc_type_detail__v",
+            "label": "Document Type Detail",
+            "label_plural": "Document Type Details"
+          },
+          {
+            "name": "doc_type_group__v",
+            "label": "Document Type Group",
+            "label_plural": "Document Type Groups"
+          },
+          {
+            "name": "doc_type_group_detail__v",
+            "label": "Document Type Group Detail",
+            "label_plural": "Document Type Group Details"
+          },
+          {
+            "name": "document_check_state__sys",
+            "label": "Document Check State",
+            "label_plural": "Document Check States"
+          },
+          {
+            "name": "document_readiness_metrics__sys",
+            "label": "Document Readiness Metrics",
+            "label_plural": "Document Readiness Metrics"
+          },
+          {
+            "name": "document_usage__v",
+            "label": "Document Usage",
+            "label_plural": "Document Usages"
+          },
+          {
+            "name": "documents",
+            "label": "documents",
+            "label_plural": "documents"
+          },
+          {
+            "name": "dosage_form_strength__c",
+            "label": "Dosage Form Strength",
+            "label_plural": "Dosage Form Strengths"
+          },
+          {
+            "name": "edl__v",
+            "label": "EDL",
+            "label_plural": "EDLs"
+          },
+          {
+            "name": "edl_item__v",
+            "label": "EDL Item",
+            "label_plural": "EDL Items"
+          },
+          {
+            "name": "edl_item_template__v",
+            "label": "EDL Item Template",
+            "label_plural": "EDL Item Templates"
+          },
+          {
+            "name": "edl_template__v",
+            "label": "EDL Template",
+            "label_plural": "EDL Templates"
+          },
+          {
+            "name": "email__sys",
+            "label": "Email",
+            "label_plural": "Emails"
+          },
+          {
+            "name": "emailed_document__sys",
+            "label": "Emailed Document",
+            "label_plural": "Emailed Documents"
+          },
+          {
+            "name": "envelope__sys",
+            "label": "Envelope",
+            "label_plural": "Envelopes"
+          },
+          {
+            "name": "envelope_content__sys",
+            "label": "Envelope Content",
+            "label_plural": "Envelope Contents"
+          },
+          {
+            "name": "events",
+            "label": "events",
+            "label_plural": "events"
+          },
+          {
+            "name": "exception_item__sys",
+            "label": "User Exception Item",
+            "label_plural": "User Exception Items"
+          },
+          {
+            "name": "exception_message__sys",
+            "label": "User Exception Message",
+            "label_plural": "User Exception Messages"
+          },
+          {
+            "name": "excluded_classification__sys",
+            "label": "Excluded Classification",
+            "label_plural": "Excluded Classifications"
+          },
+          {
+            "name": "external_url__sys",
+            "label": "External Url",
+            "label_plural": "External Urls"
+          },
+          {
+            "name": "glossary_definition__sys",
+            "label": "Glossary Definition",
+            "label_plural": "Glossary Definitions"
+          },
+          {
+            "name": "glossary_event__sys",
+            "label": "Glossary Event",
+            "label_plural": "Glossary Events"
+          },
+          {
+            "name": "group__sys",
+            "label": "Group",
+            "label_plural": "Groups"
+          },
+          {
+            "name": "group_membership__sys",
+            "label": "Membership",
+            "label_plural": "group_membership__sys"
+          },
+          {
+            "name": "holiday__sys",
+            "label": "Holiday",
+            "label_plural": "Holidays"
+          },
+          {
+            "name": "holiday_schedule__sys",
+            "label": "Holiday Schedule",
+            "label_plural": "Holiday Schedules"
+          },
+          {
+            "name": "impacted_market__c",
+            "label": "Impacted Market",
+            "label_plural": "Impacted Markets"
+          },
+          {
+            "name": "inactive_workflow__sys",
+            "label": "inactive_workflow__sys",
+            "label_plural": "inactive_workflow__sys"
+          },
+          {
+            "name": "inactive_workflow_item__sys",
+            "label": "inactive_workflow_item__sys",
+            "label_plural": "inactive_workflow_item__sys"
+          },
+          {
+            "name": "inactive_workflow_job__sys",
+            "label": "Inactive Workflow Job",
+            "label_plural": "Inactive Workflow Jobs"
+          },
+          {
+            "name": "inactive_workflow_task__sys",
+            "label": "inactive_workflow_task__sys",
+            "label_plural": "inactive_workflow_task__sys"
+          },
+          {
+            "name": "inactive_workflow_task_item__sys",
+            "label": "inactive_workflow_task_item__sys",
+            "label_plural": "inactive_workflow_task_item__sys"
+          },
+          {
+            "name": "integration__sys",
+            "label": "Integration",
+            "label_plural": "Integrations"
+          },
+          {
+            "name": "integration_point__sys",
+            "label": "Integration Point",
+            "label_plural": "Integration Points"
+          },
+          {
+            "name": "job_history__sys",
+            "label": "job_history__sys",
+            "label_plural": "job_history__sys"
+          },
+          {
+            "name": "job_instance__sys",
+            "label": "job_instance__sys",
+            "label_plural": "job_instance__sys"
+          },
+          {
+            "name": "job_task_history__sys",
+            "label": "job_task_history__sys",
+            "label_plural": "job_task_history__sys"
+          },
+          {
+            "name": "kanban_board__c",
+            "label": "Kanban Board",
+            "label_plural": "Kanban Boards"
+          },
+          {
+            "name": "kanban_card_field__c",
+            "label": "Kanban Card Field",
+            "label_plural": "Kanban Card Fields"
+          },
+          {
+            "name": "kanban_color__c",
+            "label": "Kanban Color",
+            "label_plural": "Kanban Colors"
+          },
+          {
+            "name": "kanban_swimlane__c",
+            "label": "Kanban Swimlane",
+            "label_plural": "Kanban Swimlanes"
+          },
+          {
+            "name": "language__sys",
+            "label": "Language",
+            "label_plural": "Languages"
+          },
+          {
+            "name": "language_locale__sys",
+            "label": "Language Locale",
+            "label_plural": "Language Locales"
+          },
+          {
+            "name": "legalhold__v",
+            "label": "Legal Hold",
+            "label_plural": "Legal Holds"
+          },
+          {
+            "name": "legalhold_item__v",
+            "label": "Legal Hold Item",
+            "label_plural": "Legal Hold Items"
+          },
+          {
+            "name": "library_question__sys",
+            "label": "Library Question",
+            "label_plural": "Library Questions"
+          },
+          {
+            "name": "library_question_reference_document__sys",
+            "label": "Library Question Reference Document",
+            "label_plural": "Library Question Reference Documents"
+          },
+          {
+            "name": "link_target__sys",
+            "label": "Link Target",
+            "label_plural": "Link Targets"
+          },
+          {
+            "name": "locale__sys",
+            "label": "Locale",
+            "label_plural": "Locales"
+          },
+          {
+            "name": "log_analyzer_test_object__c",
+            "label": "Log Analyzer Test Object",
+            "label_plural": "Log Analyzer Test Objects"
+          },
+          {
+            "name": "match_text_variation__sys",
+            "label": "Match Text Variation",
+            "label_plural": "Match Text Variations"
+          },
+          {
+            "name": "matched_documents",
+            "label": "matched_documents",
+            "label_plural": "matched_documents"
+          },
+          {
+            "name": "object_lifecycle_stage_label__sys",
+            "label": "Object Lifecycle Stage Label",
+            "label_plural": "Object Lifecycle Stage Labels"
+          },
+          {
+            "name": "object_lifecycle_state_stage__sys",
+            "label": "Object Lifecycle State-Stage",
+            "label_plural": "Object Lifecycle State-Stages"
+          },
+          {
+            "name": "object_with_doc_reference__c",
+            "label": "Object With Doc Reference",
+            "label_plural": "Objects With Doc Reference"
+          },
+          {
+            "name": "office_edit_version__sys",
+            "label": "Office Edit Version",
+            "label_plural": "Office Edit Versions"
+          },
+          {
+            "name": "outbound_package__v",
+            "label": "Outbound Package",
+            "label_plural": "Outbound Packages"
+          },
+          {
+            "name": "package_component__v",
+            "label": "Package Component",
+            "label_plural": "Package Components"
+          },
+          {
+            "name": "package_dataset__sys",
+            "label": "Package Dataset",
+            "label_plural": "Package Datasets"
+          },
+          {
+            "name": "perf_stats__v",
+            "label": "Performance Statistics",
+            "label_plural": "Performance Statistics"
+          },
+          {
+            "name": "permalink__sys",
+            "label": "Permalink",
+            "label_plural": "Permalinks"
+          },
+          {
+            "name": "permission_set__sys",
+            "label": "Permission Set",
+            "label_plural": "Permission Sets"
+          },
+          {
+            "name": "person__sys",
+            "label": "Person",
+            "label_plural": "Persons"
+          },
+          {
+            "name": "person_prior__sys",
+            "label": "Prior Person",
+            "label_plural": "Prior Persons"
+          },
+          {
+            "name": "prediction_metric__sys",
+            "label": "Prediction Metric",
+            "label_plural": "Prediction Metrics"
+          },
+          {
+            "name": "predictions__sys",
+            "label": "Prediction",
+            "label_plural": "Predictions"
+          },
+          {
+            "name": "product__c",
+            "label": "Product",
+            "label_plural": "Products"
+          },
+          {
+            "name": "question_design__sys",
+            "label": "Question Design",
+            "label_plural": "Question Designs"
+          },
+          {
+            "name": "question_design_reference_document__sys",
+            "label": "Question Design Reference Document",
+            "label_plural": "Question Design Reference Documents"
+          },
+          {
+            "name": "reference_lookup__sys",
+            "label": "Reference Lookup",
+            "label_plural": "Reference Lookups"
+          },
+          {
+            "name": "region__c",
+            "label": "Region",
+            "label_plural": "Regions"
+          },
+          {
+            "name": "relationships",
+            "label": "relationships",
+            "label_plural": "relationships"
+          },
+          {
+            "name": "rendition_profile__sys",
+            "label": "Rendition Profile",
+            "label_plural": "Rendition Profiles"
+          },
+          {
+            "name": "renditions",
+            "label": "Rendition",
+            "label_plural": "Renditions"
+          },
+          {
+            "name": "report_usage__sys",
+            "label": "Report Usage",
+            "label_plural": "Report Usages"
+          },
+          {
+            "name": "response__sys",
+            "label": "Response",
+            "label_plural": "Responses"
+          },
+          {
+            "name": "rl_child__c",
+            "label": "RL_Child",
+            "label_plural": "test"
+          },
+          {
+            "name": "rl_child_two__c",
+            "label": "RL Child Two",
+            "label_plural": "Child Two"
+          },
+          {
+            "name": "rl_grandchild__c",
+            "label": "RL Grandchild",
+            "label_plural": "RL Grandchildren"
+          },
+          {
+            "name": "rl_join__c",
+            "label": "RL Join",
+            "label_plural": "join"
+          },
+          {
+            "name": "rl_parent__c",
+            "label": "RL_Parent",
+            "label_plural": "RL_Parents"
+          },
+          {
+            "name": "rl_related__c",
+            "label": "RL_Related",
+            "label_plural": "RL_Related"
+          },
+          {
+            "name": "rl_related_inbound__c",
+            "label": "RL_Related_Inbound",
+            "label_plural": "RL_Related_Inbound"
+          },
+          {
+            "name": "rl_test__c",
+            "label": "RL (Test) Object",
+            "label_plural": "RL Test Objects"
+          },
+          {
+            "name": "rl_test_child_c__c",
+            "label": "rl_test_child__c",
+            "label_plural": "Rl Test Children"
+          },
+          {
+            "name": "scheduled_data_export__sys",
+            "label": "Scheduled Data Export",
+            "label_plural": "Scheduled Data Exports"
+          },
+          {
+            "name": "section__sys",
+            "label": "Section",
+            "label_plural": "Sections"
+          },
+          {
+            "name": "section_design__sys",
+            "label": "Section Design",
+            "label_plural": "Section Designs"
+          },
+          {
+            "name": "security_policy__sys",
+            "label": "Security Policy",
+            "label_plural": "Security Policies"
+          },
+          {
+            "name": "security_profile__sys",
+            "label": "Security Profile",
+            "label_plural": "Security Profiles"
+          },
+          {
+            "name": "share_inbox_documents__sys",
+            "label": "Share Inbox Document",
+            "label_plural": "Share Inbox Documents"
+          },
+          {
+            "name": "site__c",
+            "label": "Site",
+            "label_plural": "Sites"
+          },
+          {
+            "name": "source_crosslink_document__sys",
+            "label": "Source - CrossLink Document",
+            "label_plural": "Source - CrossLink Documents"
+          },
+          {
+            "name": "study__c",
+            "label": "Study",
+            "label_plural": "Studies"
+          },
+          {
+            "name": "subchecklist_design__sys",
+            "label": "Sub-Checklist Design",
+            "label_plural": "Sub-Checklist Designs"
+          },
+          {
+            "name": "suppressed_email_address__sys",
+            "label": "Suppressed Email Address",
+            "label_plural": "Suppressed Email Addresses"
+          },
+          {
+            "name": "tab_group__sys",
+            "label": "Tab Group",
+            "label_plural": "Tab Groups"
+          },
+          {
+            "name": "test__c",
+            "label": "Test",
+            "label_plural": "Tests"
+          },
+          {
+            "name": "test_large_object__c",
+            "label": "Test Large Object",
+            "label_plural": "Test Large Objects"
+          },
+          {
+            "name": "test_object__c",
+            "label": "Test Object",
+            "label_plural": "Test Objects"
+          },
+          {
+            "name": "trained_model__sys",
+            "label": "Trained Model",
+            "label_plural": "Trained Models"
+          },
+          {
+            "name": "trained_model_performance_metric__sys",
+            "label": "Trained Model Performance Metric",
+            "label_plural": "Trained Model Performance Metrics"
+          },
+          {
+            "name": "user__sys",
+            "label": "User",
+            "label_plural": "Users"
+          },
+          {
+            "name": "user_role__sys",
+            "label": "User Role",
+            "label_plural": "User Roles"
+          },
+          {
+            "name": "user_role_constraint__v",
+            "label": "User Role Constraint",
+            "label_plural": "User Role Constraints"
+          },
+          {
+            "name": "user_role_setup__v",
+            "label": "User Role Setup",
+            "label_plural": "User Role Setup"
+          },
+          {
+            "name": "user_task__v",
+            "label": "User Task",
+            "label_plural": "User Tasks"
+          },
+          {
+            "name": "users",
+            "label": "users",
+            "label_plural": "users"
+          },
+          {
+            "name": "vault_component__v",
+            "label": "Vault Component",
+            "label_plural": "Vault Components"
+          },
+          {
+            "name": "vault_component_relationship__sys",
+            "label": "Vault Component Relationship",
+            "label_plural": "Vault Component Relationships"
+          },
+          {
+            "name": "vault_package__v",
+            "label": "Inbound Package",
+            "label_plural": "Inbound Packages"
+          },
+          {
+            "name": "vault_package_code__sys",
+            "label": "Inbound Package Code",
+            "label_plural": "Inbound Package Code"
+          },
+          {
+            "name": "vault_package_component__v",
+            "label": "Inbound Package Component",
+            "label_plural": "Inbound Package Components"
+          },
+          {
+            "name": "vault_package_data__v",
+            "label": "Inbound Package Data",
+            "label_plural": "Inbound Package Data"
+          },
+          {
+            "name": "vault_package_step__v",
+            "label": "Inbound Package Step",
+            "label_plural": "Inbound Package Steps"
+          },
+          {
+            "name": "veevaid_invite_vault_user_creation__sys",
+            "label": "VeevaID invite: Vault User Creation",
+            "label_plural": "VeevaID invites: Vault User Creations"
+          },
+          {
+            "name": "vfm_file_security_policy__v",
+            "label": "VFM File Security Policy",
+            "label_plural": "VFM File Security Policies"
+          },
+          {
+            "name": "vfm_user__sys",
+            "label": "Vault File Manager User",
+            "label_plural": "Vault File Manager Users"
+          },
+          {
+            "name": "vsdk_create_product_application__c",
+            "label": "VSDK Create Product Application",
+            "label_plural": "VSDK Create Product Applications"
+          },
+          {
+            "name": "vsdk_hello_world__c",
+            "label": "vSDK Hello World",
+            "label_plural": "vSDK Hello World"
+          },
+          {
+            "name": "vsdk_loan_approval__c",
+            "label": "Loan Approval",
+            "label_plural": "Loan Approvals"
+          },
+          {
+            "name": "vsdk_product__c",
+            "label": "VSDK Product",
+            "label_plural": "VSDK Products"
+          },
+          {
+            "name": "vsdk_product_application__c",
+            "label": "VSDK Product Application",
+            "label_plural": "VSDK Product Applications"
+          },
+          {
+            "name": "vsdk_purchase_order__c",
+            "label": "Purchase Order",
+            "label_plural": "Purchase Orders"
+          },
+          {
+            "name": "workflow__v",
+            "label": "Workflow",
+            "label_plural": "Workflows"
+          },
+          {
+            "name": "workflow_role_setup__v",
+            "label": "Workflow Role Setup",
+            "label_plural": "Workflow Role Setup"
+          },
+          {
+            "name": "workflow_variable__sys",
+            "label": "Workflow Variable",
+            "label_plural": "Workflow Variables"
+          },
+          {
+            "name": "workflows",
+            "label": "workflows",
+            "label_plural": "workflows"
+          },
+          {
+            "name": "xml_element__v",
+            "label": "XML Element",
+            "label_plural": "XML Elements"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "https://example.veevavault.com/api/v26.2/objects/picklists"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "private, no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:15 GMT",
+        "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1995",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-267529-9-1786126153529",
+        "x-vaultapi-status": "SUCCESS",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "responseMessage": "Success",
+        "errorCodes": null,
+        "picklists": [
+          {
+            "name": "report_type__sys",
+            "label": "Report Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "documentTypeName": "doctype_trigger__c",
+                "propertyName": "test__c"
+              },
+              {
+                "objectName": "legalhold__v",
+                "propertyName": "test__c"
+              },
+              {
+                "objectName": "report_usage__sys",
+                "propertyName": "report_type__sys"
+              },
+              {
+                "objectName": "report__sys",
+                "propertyName": "report_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "checkout_types__sys",
+            "label": "Check Out Types",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "documentTypeName": "base_document__v",
+                "propertyName": "checkout_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "currency_iso__sys",
+            "label": "Currency ISO",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "currency__sys",
+                "propertyName": "abbreviation__sys"
+              }
+            ]
+          },
+          {
+            "name": "indexed_permissions__sys",
+            "label": "Indexed Permissions",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "user__sys",
+                "propertyName": "indexed_permissions__sys"
+              }
+            ]
+          },
+          {
+            "name": "default_status__v",
+            "label": "Default Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "log_analyzer_test_object__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "edl__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "dependency_design__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "process_view__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "package_dataset__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "report_usage__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vault_component_relationship__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "permalink__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "product__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "perf_stats__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vsdk_create_product_application__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "legalhold_item__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_related__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_available_answer__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "circular_c__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "excluded_classification__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vsdk_product__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "document_check_state__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "reference_lookup__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "application_role__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vault_package__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "predictions__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "subchecklist_design__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "integration__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "locale__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "legalhold__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "document_usage__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "binder_metadata__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "envelope_content__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "daily_agent_activity__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "workflow_variable__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_child_two__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vault_package_data__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_dependency__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "annotation_keywords__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "cdn_distribution_status__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "exception_item__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "glossary_definition__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "agent_instance__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vsdk_loan_approval__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "test__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "available_answer_design__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vault_package_code__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "available_answer__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "answer_library_design__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "dataset_item__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "access_request__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "section__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "edl_template__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "api_access_token__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "batch__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "media__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "permission_set__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "dataset__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "prediction_metric__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "security_profile__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "connection_stats__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "agent_action_execution__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "holiday__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "brand__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "doc_type_group__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "edl_item_template__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vault_package_component__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_parent__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "dosage_form_strength__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "connection_backed_crosslink__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "language_locale__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vsdk_purchase_order__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_test_child_c__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "mobile_share_media__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "site__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_design__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "language__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "doc_lifecycle_stage_label__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "glossary_event__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_test__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "emailed_document__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "external_url__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "section_design__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vfm_user__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "connection__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "study__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "veevaid_invite_vault_user_creation__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_response_sel_ans__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rendition_profile__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "workflow_role_setup__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "match_text_variation__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "trained_model__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "kanban_board__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_response_ref_doc__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_join__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "ccds_event__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "object_lifecycle_stage_label__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "tab_group__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "user_role_constraint__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "question_design_reference_document__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vault_component__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "kanban_card_field__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "question_design__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "daily_agent_action_activity__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "email__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "xml_element__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "doc_type_group_detail__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "user_role__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_response_doc__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "object_with_doc_reference__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "response__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "object_lifecycle_state_stage__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "trained_model_performance_metric__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_response_ord_ans__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "impacted_market__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "person__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_grandchild__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_field_translation__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_response__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "security_policy__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "user_task__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "office_edit_version__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "doc_type_detail__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "circular_b__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "integration_point__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "library_question__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "dependency__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_design_translation__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "connection_client__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "link_target__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "crosslink_source_event__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "scheduled_data_export__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "exception_message__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_related_inbound__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "annotation_keyword_targets__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "holiday_schedule__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "suppressed_email_address__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "document_readiness_metrics__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "share_inbox_documents__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "circular_a__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "picklist_value__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "channel_usage__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "country__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "library_question_reference_document__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_design_master__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "person_prior__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "package_component__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "kanban_color__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "connection_authorization__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "source_crosslink_document__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "outbound_package__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vault_package_step__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "edl_item__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "test_object__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "currency__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "rl_child__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "workflow__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "kanban_swimlane__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "dashboard__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vsdk_product_application__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vfm_file_security_policy__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "vsdk_hello_world__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "report__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "test_large_object__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_subchecklist__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "activity__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_checklist__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "checklist_test_section__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "user_role_setup__v",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "envelope__sys",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "region__c",
+                "propertyName": "status__v"
+              },
+              {
+                "objectName": "doc_lifecycle_state_stage__sys",
+                "propertyName": "status__v"
+              }
+            ]
+          },
+          {
+            "name": "workflow_task_item_status__sys",
+            "label": "Workflow Task Item Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "vsdk_model__c",
+            "label": "vSDK Model",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vsdk_purchase_order__c",
+                "propertyName": "model__c"
+              }
+            ]
+          },
+          {
+            "name": "cdn_distribution_status__v",
+            "label": "CDN Distribution Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "cdn_distribution_status__v",
+                "propertyName": "action__v"
+              }
+            ]
+          },
+          {
+            "name": "workflow_task_status__sys",
+            "label": "Workflow Task Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "email_preferences__sys",
+            "label": "Email Preferences",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "user__sys",
+                "propertyName": "tasks__sys"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "shared_views__sys"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "favorite_documents__sys"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "annotation_replies__sys"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "send_as_link__sys"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "user_mentions__sys"
+              }
+            ]
+          },
+          {
+            "name": "report_tags__sys",
+            "label": "Report Tags",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "dashboard__sys",
+                "propertyName": "tags__sys"
+              },
+              {
+                "objectName": "report__sys",
+                "propertyName": "tags__sys"
+              }
+            ]
+          },
+          {
+            "name": "checklist_section_status__sys",
+            "label": "Checklist Section Status",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "checklist_test_section__sys",
+                "propertyName": "checklist_section_status__sys"
+              },
+              {
+                "objectName": "section__sys",
+                "propertyName": "checklist_section_status__sys"
+              }
+            ]
+          },
+          {
+            "name": "workflow_item_type__sys",
+            "label": "Workflow Item Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "exception_item_error_status__sys",
+            "label": "User Exception Item Error Status",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "exception_item__sys",
+                "propertyName": "error_status__sys"
+              }
+            ]
+          },
+          {
+            "name": "activity_type__v",
+            "label": "Activity Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "channel_usage__v",
+                "propertyName": "activity_type__v"
+              }
+            ]
+          },
+          {
+            "name": "urs_source__sys",
+            "label": "User Role Setup Sources",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "user_role_setup__v",
+                "propertyName": "urs_source__sys"
+              }
+            ]
+          },
+          {
+            "name": "checklist_field__sys",
+            "label": "Checklist Field",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "checklist_field_translation__sys",
+                "propertyName": "checklist_field__sys"
+              }
+            ]
+          },
+          {
+            "name": "timezone__sys",
+            "label": "Timezone",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "person_prior__sys",
+                "propertyName": "timezone__sys"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "timezone__sys"
+              },
+              {
+                "objectName": "person__sys",
+                "propertyName": "timezone__sys"
+              }
+            ]
+          },
+          {
+            "name": "documents_required__sys",
+            "label": "Documents Required",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "checklist_test_response__sys",
+                "propertyName": "documents_required__sys"
+              },
+              {
+                "objectName": "answer_library_design__sys",
+                "propertyName": "documents_required__sys"
+              },
+              {
+                "objectName": "available_answer_design__sys",
+                "propertyName": "documents_required__sys"
+              },
+              {
+                "objectName": "user_role_setup__v",
+                "propertyName": "documents_required__c"
+              },
+              {
+                "objectName": "checklist_test_available_answer__sys",
+                "propertyName": "documents_required__sys"
+              },
+              {
+                "objectName": "library_question__sys",
+                "propertyName": "documents_required__sys"
+              },
+              {
+                "objectName": "question_design__sys",
+                "propertyName": "documents_required__sys"
+              }
+            ]
+          },
+          {
+            "name": "check_out_status__sys",
+            "label": "Checkout Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "office_edit_version__sys",
+                "propertyName": "check_out_status__sys"
+              }
+            ]
+          },
+          {
+            "name": "subprocess__sys",
+            "label": "Subprocess",
+            "kind": "global",
+            "system": true,
+            "systemManaged": true
+          },
+          {
+            "name": "process__sys",
+            "label": "Process",
+            "kind": "global",
+            "system": true,
+            "systemManaged": true,
+            "usedIn": [
+              {
+                "objectName": "process_view__sys",
+                "propertyName": "process__sys"
+              },
+              {
+                "objectName": "process_view__sys",
+                "propertyName": "subprocess__sys"
+              }
+            ]
+          },
+          {
+            "name": "reference_lookup_type__sys",
+            "label": "Reference Lookup Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "reference_lookup__sys",
+                "propertyName": "lookup_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "comment_type__sys",
+            "label": "Comment Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "checklist_test_response__sys",
+                "propertyName": "comment_type__sys"
+              },
+              {
+                "objectName": "question_design__sys",
+                "propertyName": "comment_type__sys"
+              },
+              {
+                "objectName": "library_question__sys",
+                "propertyName": "comment_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "summary_email_interval__sys",
+            "label": "Summary Email Interval",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "user__sys",
+                "propertyName": "summary_email_interval__sys"
+              }
+            ]
+          },
+          {
+            "name": "language_cda__v",
+            "label": "Language",
+            "kind": "global",
+            "systemManaged": true
+          },
+          {
+            "name": "state_cda__v",
+            "label": "State",
+            "kind": "global",
+            "systemManaged": true
+          },
+          {
+            "name": "country_cda__v",
+            "label": "Country",
+            "kind": "global",
+            "systemManaged": true,
+            "usedIn": [
+              {
+                "objectName": "country__v",
+                "propertyName": "country_cda__v"
+              }
+            ]
+          },
+          {
+            "name": "glossary_definition_match_type__sys",
+            "label": "Glossary Definition Match Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "glossary_event__sys",
+                "propertyName": "glossary_definition_match_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "picklist__c",
+            "label": "Picklist",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "rl_parent__c",
+                "propertyName": "picklist__c"
+              }
+            ]
+          },
+          {
+            "name": "notification_category__sys",
+            "label": "Notification Categories",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "in_merge__sys",
+            "label": "In Merge",
+            "kind": "global",
+            "systemManaged": false
+          },
+          {
+            "name": "sdk_deployment_option__sys",
+            "label": "Java SDK Deployment Option",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "outbound_package__v",
+                "propertyName": "java_sdk_deployment_option__sys"
+              }
+            ]
+          },
+          {
+            "name": "vsdk_product_type__c",
+            "label": "VSDK Product Type Test",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "documentTypeName": "vsdk_product_application_form__c",
+                "propertyName": "product_type__c"
+              },
+              {
+                "objectName": "vsdk_product_application__c",
+                "propertyName": "product_type__c"
+              },
+              {
+                "objectName": "vsdk_product__c",
+                "propertyName": "product_type__c"
+              }
+            ]
+          },
+          {
+            "name": "object_role_assignment_type__sys",
+            "label": "Object Role Assignment Type",
+            "kind": "global",
+            "systemManaged": true
+          },
+          {
+            "name": "user_license_type__sys",
+            "label": "License Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "user__sys",
+                "propertyName": "license_type__sys"
+              },
+              {
+                "objectName": "user__sys",
+                "propertyName": "license_platformplatform__sys"
+              },
+              {
+                "objectName": "veevaid_invite_vault_user_creation__sys",
+                "propertyName": "license_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "source_version_event__sys",
+            "label": "Source Version Event",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "crosslink_source_event__sys",
+                "propertyName": "source_version_event__sys"
+              }
+            ]
+          },
+          {
+            "name": "report_run_type__sys",
+            "label": "Report Run Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "report_usage__sys",
+                "propertyName": "report_run_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "model_performance_metric_type__sys",
+            "label": "Model Performance Metric Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "trained_model_performance_metric__sys",
+                "propertyName": "performance_metric_type__sys"
+              },
+              {
+                "objectName": "prediction_metric__sys",
+                "propertyName": "performance_metric_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "workflow_type__sys",
+            "label": "Workflow Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "start_type__sys",
+            "label": "Start Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "envelope_content__sys",
+                "propertyName": "start_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "source_version_binding_rule__v",
+            "label": "Source Binding Rule",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "documentTypeName": "base_document__v",
+                "propertyName": "source_binding_rule__v"
+              }
+            ]
+          },
+          {
+            "name": "link_status__v",
+            "label": "Link Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "documentTypeName": "base_document__v",
+                "propertyName": "link_status__v"
+              }
+            ]
+          },
+          {
+            "name": "component_blocking_type__sys",
+            "label": "Component Blocking Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vault_component_relationship__sys",
+                "propertyName": "blocking__sys"
+              }
+            ]
+          },
+          {
+            "name": "approval_status1__c",
+            "label": " Approval Status",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vsdk_loan_approval__c",
+                "propertyName": "approval_status__c"
+              }
+            ]
+          },
+          {
+            "name": "loan_period_months1__c",
+            "label": "Loan Period (Months)",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vsdk_loan_approval__c",
+                "propertyName": "loan_period_months__c"
+              }
+            ]
+          },
+          {
+            "name": "checklist_dependency_behavior__sys",
+            "label": "Checklist Dependency Behavior",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "checklist_test_dependency__sys",
+                "propertyName": "behavior__sys"
+              },
+              {
+                "objectName": "dependency__sys",
+                "propertyName": "behavior__sys"
+              },
+              {
+                "objectName": "dependency_design__sys",
+                "propertyName": "behavior__sys"
+              }
+            ]
+          },
+          {
+            "name": "vault_pkg_comp_status__v",
+            "label": "Inbound Package Component Status",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vault_package_data__v",
+                "propertyName": "deployment_status__v"
+              },
+              {
+                "objectName": "vault_package_step__v",
+                "propertyName": "deployment_status__v"
+              },
+              {
+                "objectName": "vault_package_component__v",
+                "propertyName": "deployment_status__v"
+              },
+              {
+                "objectName": "vault_package__v",
+                "propertyName": "deployment_status__v"
+              }
+            ]
+          },
+          {
+            "name": "binder_node_types__sys",
+            "label": "Binder Node Types",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "field_extracted__sys",
+            "label": "Field Extracted",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "trained_model_performance_metric__sys",
+                "propertyName": "field_extracted__sys"
+              },
+              {
+                "objectName": "prediction_metric__sys",
+                "propertyName": "field_extracted__sys"
+              }
+            ]
+          },
+          {
+            "name": "permalink_target_type__v",
+            "label": "Permalink Target Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "permalink__sys",
+                "propertyName": "permalink_type__v"
+              }
+            ]
+          },
+          {
+            "name": "vault_package_type__v",
+            "label": "Inbound Package Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vault_package__v",
+                "propertyName": "package_type__v"
+              }
+            ]
+          },
+          {
+            "name": "language__v",
+            "label": "Language",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "tags__v",
+            "label": "Tags",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "documentTypeName": "base_document__v",
+                "propertyName": "tags__v"
+              }
+            ]
+          },
+          {
+            "name": "checklist_type__sys",
+            "label": "Checklist Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "checklist__sys",
+                "propertyName": "checklist_type__sys"
+              },
+              {
+                "objectName": "checklist_design__sys",
+                "propertyName": "checklist_type__sys"
+              },
+              {
+                "objectName": "checklist_test_checklist__sys",
+                "propertyName": "checklist_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "suggestedlink_link_target_type__v",
+            "label": "Reference Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "link_target__sys",
+                "propertyName": "suggestedlink_link_target_type__v"
+              }
+            ]
+          },
+          {
+            "name": "vfm_file_security_policy_type__v",
+            "label": "VFM File Security Policy Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vfm_file_security_policy__v",
+                "propertyName": "vfm_file_security_policy_type__v"
+              }
+            ]
+          },
+          {
+            "name": "edl_matching_field__v",
+            "label": "EDL Matching Field",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "edl_template__v",
+                "propertyName": "matching_fields__v"
+              },
+              {
+                "objectName": "edl__v",
+                "propertyName": "matching_fields__v"
+              }
+            ]
+          },
+          {
+            "name": "meddra_version__v",
+            "label": "MedDRA Version",
+            "kind": "global",
+            "systemManaged": false
+          },
+          {
+            "name": "attempt_status__v",
+            "label": "Attempt Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "cdn_distribution_status__v",
+                "propertyName": "attempt_status__v"
+              }
+            ]
+          },
+          {
+            "name": "group_types__sys",
+            "label": "Group Types",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "provider__sys",
+            "label": "Provider",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "connection__sys",
+                "propertyName": "provider__sys"
+              }
+            ]
+          },
+          {
+            "name": "execution_status__sys",
+            "label": "Execution Status",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "agent_action_execution__sys",
+                "propertyName": "execution_status__sys"
+              }
+            ]
+          },
+          {
+            "name": "signature_status__sys",
+            "label": "Signature Status",
+            "kind": "global",
+            "systemManaged": false
+          },
+          {
+            "name": "agent_state__sys",
+            "label": "Agent State",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "agent_instance__sys",
+                "propertyName": "agent_state__sys"
+              }
+            ]
+          },
+          {
+            "name": "crosslink_source_type__sys",
+            "label": "CrossLink Source Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "documentTypeName": "base_document__v",
+                "propertyName": "crosslink_source_type__sys"
+              },
+              {
+                "objectName": "source_crosslink_document__sys",
+                "propertyName": "crosslink_source_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "file_security__sys",
+            "label": "File Security",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "caption_exlusions__sys",
+            "label": "Caption Exclusions",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "rendition_profile__sys",
+                "propertyName": "caption_bookmarks_exclusion_types__sys"
+              }
+            ]
+          },
+          {
+            "name": "metric_type__sys",
+            "label": "Metric Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "security_tree_assignment_source__sys",
+            "label": "Tree Assignment Source",
+            "kind": "global",
+            "systemManaged": true
+          },
+          {
+            "name": "checklist_answer_type__sys",
+            "label": "Checklist Answer Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "checklist_test_response__sys",
+                "propertyName": "checklist_answer_type__sys"
+              },
+              {
+                "objectName": "library_question__sys",
+                "propertyName": "checklist_answer_type__sys"
+              },
+              {
+                "objectName": "question_design__sys",
+                "propertyName": "checklist_answer_type__sys"
+              },
+              {
+                "objectName": "response__sys",
+                "propertyName": "checklist_answer_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "user_usage_level__sys",
+            "label": "User Usage Level",
+            "kind": "global",
+            "systemManaged": true,
+            "usedIn": [
+              {
+                "objectName": "user__sys",
+                "propertyName": "usage_level__sys"
+              }
+            ]
+          },
+          {
+            "name": "participation_requirement__v",
+            "label": "Participation Requirement",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "workflow_role_setup__v",
+                "propertyName": "participation_requirement__v"
+              }
+            ]
+          },
+          {
+            "name": "access_request_priority__c",
+            "label": "Access Request Priority",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "access_request__c",
+                "propertyName": "priority__c"
+              }
+            ]
+          },
+          {
+            "name": "access_request_user_type__c",
+            "label": "Access Request User Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "access_request__c",
+                "propertyName": "user_type__c"
+              }
+            ]
+          },
+          {
+            "name": "training_set_type__sys",
+            "label": "Training Set Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "trained_model__sys",
+                "propertyName": "training_set_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "picklist1__c",
+            "label": "Picklist",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "rl_child__c",
+                "propertyName": "picklist__c"
+              }
+            ]
+          },
+          {
+            "name": "entity_run_status__sys",
+            "label": "Entity Run Status",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "scheduled_data_export__sys",
+                "propertyName": "entity_run_status__sys"
+              }
+            ]
+          },
+          {
+            "name": "veevaid_vault_user_creation_status__sys",
+            "label": "Veeva ID Vault User Creation Status",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "veevaid_invite_vault_user_creation__sys",
+                "propertyName": "vault_user_creation__sys"
+              }
+            ]
+          },
+          {
+            "name": "multivalue_picklist_field__c",
+            "label": "Multi-Value Picklist Field",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "rl_test__c",
+                "propertyName": "multivalue_picklist_field__c"
+              }
+            ]
+          },
+          {
+            "name": "authentication_type__sys",
+            "label": "Authentication Type",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "security_policy__sys",
+                "propertyName": "authentication_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "workflow_status__sys",
+            "label": "Workflow Status",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "color__c",
+            "label": "Color",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "test__c",
+                "propertyName": "color_picklist__c"
+              },
+              {
+                "documentTypeName": "test_document_type__c:test_document_subtype__c:test_document_classification__c",
+                "propertyName": "picklist_field__c"
+              }
+            ]
+          },
+          {
+            "name": "vsdk_integration_status__c",
+            "label": "vSDK Integration",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "vsdk_purchase_order__c",
+                "propertyName": "integration_status__c"
+              },
+              {
+                "documentTypeName": "vsdk_spark_document__c",
+                "propertyName": "vsdk_integration_status__c"
+              }
+            ]
+          },
+          {
+            "name": "environment__v",
+            "label": "Environment",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "cdn_distribution_status__v",
+                "propertyName": "environment__v"
+              }
+            ]
+          },
+          {
+            "name": "exception_item_error_type__sys",
+            "label": "User Exception Item Error Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "exception_item__sys",
+                "propertyName": "error_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "exception_message_error_type__sys",
+            "label": "User Exception Message Error Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "exception_message__sys",
+                "propertyName": "error_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "edl_completeness__v",
+            "label": "EDL Completeness",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "edl_item__v",
+                "propertyName": "completeness__v"
+              }
+            ]
+          },
+          {
+            "name": "trained_model_type__sys",
+            "label": "Trained Model Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "trained_model__sys",
+                "propertyName": "trained_model_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "glossary_event_search_type__sys",
+            "label": "Glossary Event Search Type",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "glossary_event__sys",
+                "propertyName": "glossary_event_search_type__sys"
+              }
+            ]
+          },
+          {
+            "name": "report_class__sys",
+            "label": "Report Class",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "report__sys",
+                "propertyName": "class__sys"
+              }
+            ]
+          },
+          {
+            "name": "annotation_keyword_category__v",
+            "label": "Category",
+            "kind": "global",
+            "systemManaged": false,
+            "usedIn": [
+              {
+                "objectName": "annotation_keywords__sys",
+                "propertyName": "annotation_keyword_category__v"
+              }
+            ]
+          },
+          {
+            "name": "workflow_cardinality__sys",
+            "label": "Workflow Cardinality",
+            "kind": "global",
+            "system": true,
+            "systemManaged": false
+          },
+          {
+            "name": "license_type__v",
+            "label": "License Type",
+            "kind": "user",
+            "system": true
+          }
+        ],
+        "errorType": null
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://example.veevavault.com/api/v26.2/query",
+      "body": "q=SELECT+id%2C+name__v+FROM+documents+PAGESIZE+5"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:35 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1994",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-2472647-19-1786126175143",
+        "x-vaultapi-resource": "documents",
+        "x-vaultapi-status": "SUCCESS",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "queryDescribe": {
+          "type": "select__sys",
+          "object": {
+            "name": "documents",
+            "label": "documents",
+            "label_plural": "documents"
+          },
+          "fields": [
+            {
+              "type": "id",
+              "required": true,
+              "name": "id"
+            },
+            {
+              "label": "Name",
+              "type": "String",
+              "required": true,
+              "name": "name__v",
+              "max_length": 100
+            }
+          ]
+        },
+        "responseDetails": {
+          "pagesize": 5,
+          "pageoffset": 0,
+          "size": 5,
+          "total": 9,
+          "next_page": "/api/v26.2/query/d8203c15-06a3-4853-8f10-fa09413efb23?pagesize=5&pageoffset=5"
+        },
+        "data": [
+          {
+            "id": 254124,
+            "name__v": "Boat"
+          },
+          {
+            "id": 254125,
+            "name__v": "Bike Two"
+          },
+          {
+            "id": 254211,
+            "name__v": "Bike"
+          },
+          {
+            "id": 254212,
+            "name__v": "Boat\n\nBears"
+          },
+          {
+            "id": 254601,
+            "name__v": "Placeholder"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://example.veevavault.com/api/v26.2/query/d8203c15-06a3-4853-8f10-fa09413efb23?pagesize=5&pageoffset=5"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:41 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1993",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-2472682-12-1786126181602",
+        "x-vaultapi-resource": "documents",
+        "x-vaultapi-status": "SUCCESS",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "responseDetails": {
+          "pagesize": 5,
+          "pageoffset": 5,
+          "size": 4,
+          "total": 9,
+          "previous_page": "/api/v26.2/query/d8203c15-06a3-4853-8f10-fa09413efb23?pagesize=5&pageoffset=0"
+        },
+        "data": [
+          {
+            "id": 255201,
+            "name__v": "Doctype trigger test"
+          },
+          {
+            "id": 255501,
+            "name__v": "My Favorite Binder"
+          },
+          {
+            "id": 255601,
+            "name__v": "Bunk Moreland Case File"
+          },
+          {
+            "id": 255701,
+            "name__v": "Stringer Bell Business Plan"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "method": "POST",
+      "url": "https://example.veevavault.com/api/v26.2/query/d8203c15-06a3-4853-8f10-fa09413efb23?pagesize=5&pageoffset=0"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-language": "und",
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Fri, 07 Aug 2026 18:09:42 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "nginx",
+        "service-worker-allowed": "/ui",
+        "strict-transport-security": "max-age=31536000;includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-vaultapi-burstlimit": "2000",
+        "x-vaultapi-burstlimitremaining": "1992",
+        "x-vaultapi-executionid": "http-VLT-US-EAST-1-PRODUCTION-5-2472689-16-1786126182702",
+        "x-vaultapi-resource": "documents",
+        "x-vaultapi-status": "SUCCESS",
+        "x-vaultapi-truncatedsessionid": "0000000000000000",
+        "x-vaultapi-userid": "0",
+        "x-vaultapi-vaultid": "137565"
+      },
+      "body": {
+        "responseStatus": "SUCCESS",
+        "responseDetails": {
+          "pagesize": 5,
+          "pageoffset": 0,
+          "size": 5,
+          "total": 9,
+          "next_page": "/api/v26.2/query/d8203c15-06a3-4853-8f10-fa09413efb23?pagesize=5&pageoffset=5"
+        },
+        "data": [
+          {
+            "id": 254124,
+            "name__v": "Boat"
+          },
+          {
+            "id": 254125,
+            "name__v": "Bike Two"
+          },
+          {
+            "id": 254211,
+            "name__v": "Bike"
+          },
+          {
+            "id": 254212,
+            "name__v": "Boat\n\nBears"
+          },
+          {
+            "id": 254601,
+            "name__v": "Placeholder"
+          }
+        ]
+      }
+    }
+  }
+]

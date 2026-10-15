@@ -1,0 +1,18 @@
+{
+	"comment": "Compiles both electron-tier test suites to `dist/` for a real VS Code to run: the host-integration Mocha suites (`src/test-integration/**`, launched by `@vscode/test-cli`) and the ExTester E2E suites + page objects (`src/test-e2e/**`, launched by `extest`). Both runners load compiled JS, not Vitest-transformed TS. The Vitest `src` globs never collect either directory, so they stay out of `npm test`.",
+	"compilerOptions": {
+		"module": "Node16",
+		"moduleResolution": "Node16",
+		"target": "ES2022",
+		"lib": ["ES2022"],
+		"outDir": "dist",
+		"rootDir": "src",
+		"sourceMap": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"types": ["node", "mocha", "vscode"]
+	},
+	"include": ["src/test-integration/**/*.ts", "src/test-e2e/**/*.ts"]
+}

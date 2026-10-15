@@ -1,0 +1,6 @@
+{
+	"comment": "Mocha options for the ExTester E2E tier. Webview frame-switching and Monaco boot are slow, so the per-test timeout is generous; the suite is thin (≈3–5 journeys) so total wall-clock stays bounded.",
+	"timeout": 120000,
+	"retries": 0,
+	"color": true
+}

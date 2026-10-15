@@ -1,0 +1,16 @@
+node_modules/
+dist/
+docs/
+*.vsix
+.DS_Store
+.idea/
+
+# ExTester E2E: downloaded VS Code + ChromeDriver and per-run test resources
+.vscode-test-e2e/
+# @vscode/test-cli downloaded VS Code
+.vscode-test/
+
+# Vitest browser-mode failure screenshots
+webview/**/__screenshots__/
+# Vitest browser-mode test attachments (traces/snapshots on failure)
+.vitest-attachments/

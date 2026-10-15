@@ -1,0 +1,36 @@
+.vscode/**
+.claude/**
+.idea/**
+.git/**
+*.vsix
+src/**
+!src/icons/**
+!src/syntaxes/**
+node_modules/**
+esbuild.js
+eslint.config.mjs
+tsconfig.json
+.prettierrc.json
+.gitignore
+**/*.map
+**/*.ts
+docs/**
+*.md
+!README.md
+
+# Test tiers: compiled test output and the electron-tier runners' downloaded VS Code / ChromeDriver.
+# The downloaded app bundles contain symlinked directories that crash vsce's secret scan (EISDIR),
+# and none of this belongs in the shipped extension.
+out/**
+dist/test-e2e/**
+dist/test-integration/**
+.vscode-test/**
+.vscode-test-e2e/**
+.vscode-test.mjs
+tsconfig.test-integration.json
+vitest.config.mts
+.mocharc-e2e.json
+.npmrc
+
+# Dev-tool config and Vitest browser-mode failure screenshots — not part of the extension.
+.vitest-attachments/**
