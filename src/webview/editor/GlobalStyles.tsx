@@ -5,7 +5,16 @@
  * the editor tracks the active theme.
  */
 const CSS = `
-:root { color-scheme: light dark; }
+/* VSCode never sets color-scheme inside the webview iframe, so "light dark" resolves it from the OS
+   appearance rather than the workbench theme: a light theme on a dark OS paints the iframe canvas
+   opaque black behind our themed content. Drive the scheme from the theme classes VSCode maintains
+   on body instead. It has to stay off :root -- a root color-scheme is what makes the canvas opaque,
+   and VSCode relies on the webview staying transparent over the workbench background. A high
+   contrast light theme carries vscode-high-contrast too, so the light rule comes last and wins. */
+body.vscode-dark,
+body.vscode-high-contrast { color-scheme: dark; }
+body.vscode-light,
+body.vscode-high-contrast-light { color-scheme: light; }
 body { margin: 0; overflow-x: hidden; }
 
 .vt-shell { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }

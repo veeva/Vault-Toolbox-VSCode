@@ -2,7 +2,7 @@ import * as assert from 'node:assert';
 import * as vscode from 'vscode';
 
 /** The extension's fully-qualified id (`publisher.name` from package.json). */
-export const EXTENSION_ID = 'veeva.vault-toolbox-vscode';
+export const EXTENSION_ID = 'veeva-systems.vault-toolbox-vscode';
 
 /**
  * Resolve the extension in the test host and ensure it's activated. Every integration suite needs

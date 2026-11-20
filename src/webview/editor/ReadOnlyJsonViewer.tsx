@@ -3,8 +3,9 @@ import * as monaco from 'monaco-editor/esm/vs/editor/editor.api.js';
 import {
 	ensureMonacoEnvironment,
 	editorFontFamily,
-	isLightTheme,
 	onThemeChange,
+	themeKind,
+	type ThemeKind,
 } from './monacoEnvironment';
 import { JSON_LANGUAGE_ID } from './jsonMode';
 
@@ -25,9 +26,16 @@ const MIN_FIT_HEIGHT = 40;
  */
 type Sizing = 'fit' | 'fill';
 
-/** Native Monaco theme names, so JSON colors match VS Code's Light+/Dark+ exactly. */
+/** Native Monaco theme names, so JSON colors match VSCode's own themes exactly. */
+const THEME_BY_KIND: Record<ThemeKind, string> = {
+	light: 'vs',
+	dark: 'vs-dark',
+	hcDark: 'hc-black',
+	hcLight: 'hc-light',
+};
+
 function jsonThemeName(): string {
-	return isLightTheme() ? 'vs' : 'vs-dark';
+	return THEME_BY_KIND[themeKind()];
 }
 
 /** A read-only Monaco editor for JSON: VS Code's own highlighting + folding, no validation squiggles. */

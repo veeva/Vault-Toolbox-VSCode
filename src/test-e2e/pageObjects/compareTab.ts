@@ -18,7 +18,9 @@ const OPTION_TIMEOUT_MS = 10000;
 const SOURCE_INPUT = '#vt-compare-source';
 const TARGET_INPUT = '#vt-compare-target';
 const OPTION = '.vt-rs__option';
-const COMPARE_LABEL = 'Compare';
+const COMPARE_LABEL = 'Generate Compare';
+/** Header label a *completed* comparison swaps to; clicking it clears the lock (see `CompareTab.tsx`). */
+const NEW_COMPARE_LABEL = 'New Compare';
 
 /**
  * Page object for the dedicated **Compare Environments** tab. Unlike the VQL editor, this tab can't be
@@ -46,7 +48,39 @@ export class CompareTab {
 		await runPaletteCommand('Vault Toolbox: Compare Environments');
 		const screen = new CompareTab();
 		await screen.waitReady();
+		await screen.resetIfLocked();
 		return screen;
+	}
+
+	/**
+	 * Clears a previous comparison's lock, if one is in effect. A *successful* comparison locks the
+	 * selector — `CompareSelector` disables both comboboxes and the kind toggles while `locked` — and
+	 * swaps the header button to "New Compare". The webview keeps that state for the whole VS Code
+	 * session, so a later journey (Compare runs before Compare SDK code) would otherwise type into a
+	 * disabled combobox and fail with `ElementNotInteractableError`. Clicking "New Compare" restores an
+	 * unlocked selector, exactly as a user would, which also keeps the journeys order-independent.
+	 */
+	private async resetIfLocked(): Promise<void> {
+		const wasLocked = await this.inFrame(async () => {
+			const button = await this.findButton(NEW_COMPARE_LABEL);
+			if (!button) {
+				return false;
+			}
+			await button.click();
+			return true;
+		});
+		if (!wasLocked) {
+			return;
+		}
+		await VSBrowser.instance.driver.wait(
+			() =>
+				this.inFrame(async () => {
+					const [input] = await this.webview.findWebElements(By.css(SOURCE_INPUT));
+					return input !== undefined && (await input.isEnabled());
+				}),
+			READY_TIMEOUT_MS,
+			'the Compare Environments tab stayed locked after "New Compare"',
+		);
 	}
 
 	private async inFrame<T>(callback: () => Promise<T>): Promise<T> {
@@ -183,12 +217,21 @@ export class CompareTab {
 	}
 
 	/** Assumes the webview frame is already active. Distinguishes buttons that share `.vt-btn`. */
-	private async findButtonByText(text: string): Promise<WebElement> {
+	private async findButton(text: string): Promise<WebElement | undefined> {
 		for (const button of await this.webview.findWebElements(By.css('button.vt-btn'))) {
 			if ((await button.getText()).trim() === text) {
 				return button;
 			}
 		}
-		throw new Error(`button "${text}" not found on the Compare Environments tab`);
+		return undefined;
+	}
+
+	/** As {@link findButton}, for callers that require the button to be there. */
+	private async findButtonByText(text: string): Promise<WebElement> {
+		const button = await this.findButton(text);
+		if (!button) {
+			throw new Error(`button "${text}" not found on the Compare Environments tab`);
+		}
+		return button;
 	}
 }

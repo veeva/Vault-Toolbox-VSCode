@@ -2,7 +2,7 @@
 	"name": "vault-toolbox-vscode",
 	"displayName": "Vault Toolbox",
 	"description": "Integrates Veeva Vault development and administration workflows directly into Visual Studio Code.",
-	"version": "26.2.1",
+	"version": "26.2.2",
 	"publisher": "veeva-systems",
 	"icon": "src/icons/vault-toolbox-logo.png",
 	"license": "MIT",

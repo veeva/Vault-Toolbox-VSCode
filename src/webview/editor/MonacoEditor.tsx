@@ -11,8 +11,9 @@ import { ResizeHandleIcon } from '../shell/icons';
 import {
 	ensureMonacoEnvironment,
 	editorFontFamily,
-	isLightTheme,
 	onThemeChange,
+	themeKind,
+	type ThemeKind,
 } from './monacoEnvironment';
 import { registerVqlCompletion } from './vqlCompletion';
 import { registerVqlFormatting } from './vqlFormatting';
@@ -23,9 +24,21 @@ import {
 	VQL_THEME_LIGHT,
 } from './vqlLanguage';
 
-/** Pick the VQL theme from the VSCode body class (VSCode toggles `vscode-light`/`vscode-dark`). */
+/**
+ * The Monaco theme for each VSCode theme kind. High contrast keeps Monaco's own HC themes rather
+ * than the VQL token colors, so a user who chose high contrast keeps the contrast they asked for —
+ * VQL still highlights, because Monaco resolves token names by dotted prefix and
+ * `keyword.vql.clause` falls back to the base theme's `keyword` rule.
+ */
+const THEME_BY_KIND: Record<ThemeKind, string> = {
+	light: VQL_THEME_LIGHT,
+	dark: VQL_THEME_DARK,
+	hcDark: 'hc-black',
+	hcLight: 'hc-light',
+};
+
 function currentThemeName(): string {
-	return isLightTheme() ? VQL_THEME_LIGHT : VQL_THEME_DARK;
+	return THEME_BY_KIND[themeKind()];
 }
 
 interface Props {
@@ -117,7 +130,7 @@ export const MonacoEditor = forwardRef<MonacoEditorHandle, Props>(function Monac
 				});
 		});
 
-		// Re-theme when VSCode switches light/dark (body class flips).
+		// Re-theme when VSCode switches theme (body class flips).
 		const offThemeChange = onThemeChange(() => monaco.editor.setTheme(currentThemeName()));
 
 		return () => {
